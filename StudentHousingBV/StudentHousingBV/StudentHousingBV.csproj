@@ -46,14 +46,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Company\CompanyAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Company\CompanyAccount.Designer.cs">
+      <DependentUpon>CompanyAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyAnnouncements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyAnnouncements.Designer.cs">
+      <DependentUpon>CompanyAnnouncements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyComplaints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyComplaints.Designer.cs">
+      <DependentUpon>CompanyComplaints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyHome.Designer.cs">
+      <DependentUpon>CompanyHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyRules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyRules.Designer.cs">
+      <DependentUpon>CompanyRules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyTenants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyTenants.Designer.cs">
+      <DependentUpon>CompanyTenants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tenant\TenantAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tenant\TenantAccount.Designer.cs">
+      <DependentUpon>TenantAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tenant\TenantHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tenant\TenantHome.Designer.cs">
+      <DependentUpon>TenantHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInScreen.Designer.cs">
+      <DependentUpon>LogInScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tenant\TenantAnnouncements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tenant\TenantAnnouncements.Designer.cs">
+      <DependentUpon>TenantAnnouncements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tenant\TenantComplaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tenant\TenantComplaint.Designer.cs">
+      <DependentUpon>TenantComplaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tenant\TenantRules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tenant\TenantRules.Designer.cs">
+      <DependentUpon>TenantRules.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Company\CompanyHome.resx">
+      <DependentUpon>CompanyHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tenant\TenantHome.resx">
+      <DependentUpon>TenantHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInScreen.resx">
+      <DependentUpon>LogInScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +138,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tenant\TenantComplaint.resx">
+      <DependentUpon>TenantComplaint.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
