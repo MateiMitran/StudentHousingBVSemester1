@@ -58,5 +58,10 @@ namespace StudentHousingBV
             TenantRules rules = new TenantRules();
             rules.Show();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

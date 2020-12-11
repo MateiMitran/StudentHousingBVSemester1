@@ -123,6 +123,12 @@
     <EmbeddedResource Include="Company\CompanyHome.resx">
       <DependentUpon>CompanyHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tenant\TenantAccount.resx">
+      <DependentUpon>TenantAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tenant\TenantAnnouncements.resx">
+      <DependentUpon>TenantAnnouncements.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tenant\TenantHome.resx">
       <DependentUpon>TenantHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,9 +143,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Tenant\TenantComplaint.resx">
       <DependentUpon>TenantComplaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tenant\TenantRules.resx">
+      <DependentUpon>TenantRules.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -153,6 +163,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

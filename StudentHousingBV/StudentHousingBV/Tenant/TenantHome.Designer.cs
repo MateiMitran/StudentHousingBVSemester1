@@ -62,10 +62,11 @@ namespace StudentHousingBV
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(1, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1068, 78);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lblSHBV
             // 
@@ -114,7 +115,7 @@ namespace StudentHousingBV
             // 
             this.lblAnnouncements.AutoSize = true;
             this.lblAnnouncements.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblAnnouncements.Location = new System.Drawing.Point(468, 30);
+            this.lblAnnouncements.Location = new System.Drawing.Point(467, 30);
             this.lblAnnouncements.Name = "lblAnnouncements";
             this.lblAnnouncements.Size = new System.Drawing.Size(162, 20);
             this.lblAnnouncements.TabIndex = 4;

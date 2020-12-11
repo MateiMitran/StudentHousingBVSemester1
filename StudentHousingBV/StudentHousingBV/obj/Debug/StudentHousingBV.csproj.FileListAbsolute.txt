@@ -11,3 +11,19 @@ C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\Studen
 C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantHome.resources
 C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantComplaint.resources
 C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyHome.resources
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe.config
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.pdb
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csprojAssemblyReference.cache
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyHome.resources
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAccount.resources
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAnnouncements.resources
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantHome.resources
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.LogInScreen.resources
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Properties.Resources.resources
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantComplaint.resources
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantRules.resources
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.GenerateResource.cache
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.CoreCompileInputs.cache
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.exe
+C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.pdb
