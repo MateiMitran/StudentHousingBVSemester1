@@ -7,64 +7,89 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Reflection;
 
 namespace StudentHousingBV
 {
     public partial class LogInScreen : Form
     {
-        private String tenantPassword = "TENANT";
-        private String companyPassword = "COMPANY";
         public LogInScreen()
         {
             InitializeComponent();
         }
 
-        private void button_WOC1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblUserName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            
-                
-        }
-
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            if (this.tbPassword.Text == tenantPassword)
-            {
-                this.Hide();
-                TenantHome tenantScreen = new TenantHome();
-                tenantScreen.Show();
-            }
-            else if (this.tbPassword.Text == companyPassword)
-            {
-                this.Hide();
-                CompanyHome companyScreen = new CompanyHome();
-                companyScreen.Show();
-            }
-            else
-                MessageBox.Show("Invalid password!");
+            // Get typed in username and password
+            String enteredUsername = tbUsername.Text;
+            String enteredPassword = tbPassword.Text;
 
+            String line;
+            int counter = 0;
+
+            bool loggedIn = false;
+            bool encounteredError = false;
             
-            
+            // Read users.txt and compare values
+            String path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"../../users.txt");
+            System.IO.StreamReader file = new System.IO.StreamReader(path);
 
-        }
+            while ((line = file.ReadLine()) != null)
+            {
+                String[] elements = line.Split(' ');
+                String username = elements[0];
+                String password = elements[1];
+                String role = elements[2];
+                
+                if(enteredUsername == username)
+                {
+                    if(enteredPassword == password)
+                    {
+                        if(role == "admin")
+                        {
+                            // Go to Company form
 
-        private void LogInScreen_Load(object sender, EventArgs e)
-        {
+                            this.Hide();
+                            CompanyHome companyScreen = new CompanyHome();
+                            companyScreen.Show();
+                        } else if(role == "user")
+                        {
+                            // Go to Tenant form
 
-        }
+                            this.Hide();
+                            TenantHome tenantScreen = new TenantHome();
+                            tenantScreen.Show();
+                        } else
+                        {
+                            // No such role
 
-        private void tbPassword_TextChanged(object sender, EventArgs e)
-        {
+                            tbUsername.Text = "";
+                            tbPassword.Text = "";
 
+                            MessageBox.Show("An error occured, please try logging in with a different account");
+
+                            encounteredError = true;
+                            break;
+                        }
+
+                        loggedIn = true;
+                        break;
+                    }
+                }
+
+                counter++;
+            }
+
+            if(loggedIn == false && encounteredError == false)
+            {
+                // If login failed
+
+                tbUsername.Text = "";
+                tbPassword.Text = "";
+
+                MessageBox.Show("Invalid username or password");
+            }
         }
     }
 }
