@@ -1,3 +1,0 @@
-tenant password user
-admin password admin
-test test test
