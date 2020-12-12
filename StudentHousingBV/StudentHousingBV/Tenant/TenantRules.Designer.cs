@@ -32,10 +32,9 @@ namespace StudentHousingBV
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,45 +70,35 @@ namespace StudentHousingBV
             this.label1.Text = "Rules:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // listBox1
-            // 
-            this.listBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(26, 92);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(689, 292);
-            this.listBox1.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(41, 179);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(313, 24);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "- Have respect for the other tennants";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(41, 227);
+            this.label3.Location = new System.Drawing.Point(23, 91);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(565, 24);
-            this.label3.TabIndex = 6;
+            this.label3.TabIndex = 2;
             this.label3.Text = "- No leaving or entering the premises without locking the front door";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(41, 135);
+            this.label4.Location = new System.Drawing.Point(24, 138);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(459, 24);
-            this.label4.TabIndex = 7;
+            this.label4.TabIndex = 3;
             this.label4.Text = "- Always keep your surroundings as clean as possible";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(24, 190);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(313, 24);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "- Have respect for the other tennants";
             // 
             // TenantRules
             // 
@@ -120,7 +109,6 @@ namespace StudentHousingBV
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label2);
             this.Name = "TenantRules";
@@ -136,9 +124,8 @@ namespace StudentHousingBV
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
