@@ -17,11 +17,6 @@ namespace StudentHousingBV
             InitializeComponent();
         }
 
-        private void CompanyHome_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void lblComplaints_Click(object sender, EventArgs e)
         {
             CompanyComplaints complaint = new CompanyComplaints();
@@ -40,12 +35,6 @@ namespace StudentHousingBV
             tenants.Show();
         }
 
-        private void lblAccount_Click(object sender, EventArgs e)
-        {
-            CompanyAccount account = new CompanyAccount();
-            account.Show();
-        }
-
         private void lblLogOut_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -57,6 +46,18 @@ namespace StudentHousingBV
         {
             CompanyRules rules = new CompanyRules();
             rules.Show();
+        }
+
+        private void lblAccount_Click(object sender, EventArgs e)
+        {
+            CompanyAccount account = new CompanyAccount();
+            account.Show();
+        }
+
+        private void pbAccountSettings_Click(object sender, EventArgs e)
+        {
+            CompanyAccount account = new CompanyAccount();
+            account.Show();
         }
     }
 }

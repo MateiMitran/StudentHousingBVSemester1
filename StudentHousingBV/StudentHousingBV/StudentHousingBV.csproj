@@ -120,8 +120,20 @@
     <Compile Include="Tenant\TenantRules.Designer.cs">
       <DependentUpon>TenantRules.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Company\CompanyAccount.resx">
+      <DependentUpon>CompanyAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\CompanyAnnouncements.resx">
+      <DependentUpon>CompanyAnnouncements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\CompanyComplaints.resx">
+      <DependentUpon>CompanyComplaints.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Company\CompanyHome.resx">
       <DependentUpon>CompanyHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\CompanyRules.resx">
+      <DependentUpon>CompanyRules.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tenant\TenantAccount.resx">
       <DependentUpon>TenantAccount.cs</DependentUpon>
