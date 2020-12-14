@@ -59,5 +59,15 @@ namespace StudentHousingBV
             CompanyAccount account = new CompanyAccount();
             account.Show();
         }
+
+        private void lbNewComplaints_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btnViewNewComplaint.Visible = true;
+        }
+
+        private void lbLatestAnnouncements_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btnViewLatestAnnouncement.Visible = true;
+        }
     }
 }

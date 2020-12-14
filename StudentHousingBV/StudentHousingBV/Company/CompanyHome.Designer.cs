@@ -45,6 +45,12 @@ namespace StudentHousingBV
             this.label4 = new System.Windows.Forms.Label();
             this.lblAccount = new System.Windows.Forms.Label();
             this.pbAccountSettings = new System.Windows.Forms.PictureBox();
+            this.lbNewComplaints = new System.Windows.Forms.ListBox();
+            this.lblNewComplaints = new System.Windows.Forms.Label();
+            this.lblLatestAnnouncements = new System.Windows.Forms.Label();
+            this.lbLatestAnnouncements = new System.Windows.Forms.ListBox();
+            this.btnViewNewComplaint = new System.Windows.Forms.Button();
+            this.btnViewLatestAnnouncement = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAccountSettings)).BeginInit();
             this.SuspendLayout();
@@ -250,12 +256,84 @@ namespace StudentHousingBV
             this.pbAccountSettings.TabStop = false;
             this.pbAccountSettings.Click += new System.EventHandler(this.pbAccountSettings_Click);
             // 
+            // lbNewComplaints
+            // 
+            this.lbNewComplaints.FormattingEnabled = true;
+            this.lbNewComplaints.ItemHeight = 25;
+            this.lbNewComplaints.Items.AddRange(new object[] {
+            "click on me",
+            "test"});
+            this.lbNewComplaints.Location = new System.Drawing.Point(340, 308);
+            this.lbNewComplaints.Name = "lbNewComplaints";
+            this.lbNewComplaints.Size = new System.Drawing.Size(392, 404);
+            this.lbNewComplaints.TabIndex = 14;
+            this.lbNewComplaints.SelectedIndexChanged += new System.EventHandler(this.lbNewComplaints_SelectedIndexChanged);
+            // 
+            // lblNewComplaints
+            // 
+            this.lblNewComplaints.AutoSize = true;
+            this.lblNewComplaints.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.lblNewComplaints.Location = new System.Drawing.Point(334, 260);
+            this.lblNewComplaints.Name = "lblNewComplaints";
+            this.lblNewComplaints.Size = new System.Drawing.Size(235, 31);
+            this.lblNewComplaints.TabIndex = 15;
+            this.lblNewComplaints.Text = "New Complaints:";
+            // 
+            // lblLatestAnnouncements
+            // 
+            this.lblLatestAnnouncements.AutoSize = true;
+            this.lblLatestAnnouncements.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.lblLatestAnnouncements.Location = new System.Drawing.Point(1071, 260);
+            this.lblLatestAnnouncements.Name = "lblLatestAnnouncements";
+            this.lblLatestAnnouncements.Size = new System.Drawing.Size(321, 31);
+            this.lblLatestAnnouncements.TabIndex = 17;
+            this.lblLatestAnnouncements.Text = "Latest Announcements:";
+            // 
+            // lbLatestAnnouncements
+            // 
+            this.lbLatestAnnouncements.FormattingEnabled = true;
+            this.lbLatestAnnouncements.ItemHeight = 25;
+            this.lbLatestAnnouncements.Items.AddRange(new object[] {
+            "test",
+            "click on me"});
+            this.lbLatestAnnouncements.Location = new System.Drawing.Point(1077, 308);
+            this.lbLatestAnnouncements.Name = "lbLatestAnnouncements";
+            this.lbLatestAnnouncements.Size = new System.Drawing.Size(392, 404);
+            this.lbLatestAnnouncements.TabIndex = 16;
+            this.lbLatestAnnouncements.SelectedIndexChanged += new System.EventHandler(this.lbLatestAnnouncements_SelectedIndexChanged);
+            // 
+            // btnViewNewComplaint
+            // 
+            this.btnViewNewComplaint.Location = new System.Drawing.Point(753, 308);
+            this.btnViewNewComplaint.Name = "btnViewNewComplaint";
+            this.btnViewNewComplaint.Size = new System.Drawing.Size(222, 47);
+            this.btnViewNewComplaint.TabIndex = 18;
+            this.btnViewNewComplaint.Text = "View Complaint";
+            this.btnViewNewComplaint.UseVisualStyleBackColor = true;
+            this.btnViewNewComplaint.Visible = false;
+            // 
+            // btnViewLatestAnnouncement
+            // 
+            this.btnViewLatestAnnouncement.Location = new System.Drawing.Point(1489, 308);
+            this.btnViewLatestAnnouncement.Name = "btnViewLatestAnnouncement";
+            this.btnViewLatestAnnouncement.Size = new System.Drawing.Size(222, 47);
+            this.btnViewLatestAnnouncement.TabIndex = 18;
+            this.btnViewLatestAnnouncement.Text = "View Announcement";
+            this.btnViewLatestAnnouncement.UseVisualStyleBackColor = true;
+            this.btnViewLatestAnnouncement.Visible = false;
+            // 
             // CompanyHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1797, 862);
+            this.Controls.Add(this.btnViewLatestAnnouncement);
+            this.Controls.Add(this.btnViewNewComplaint);
+            this.Controls.Add(this.lblLatestAnnouncements);
+            this.Controls.Add(this.lbLatestAnnouncements);
+            this.Controls.Add(this.lblNewComplaints);
+            this.Controls.Add(this.lbNewComplaints);
             this.Controls.Add(this.pbAccountSettings);
             this.Controls.Add(this.lblAccount);
             this.Controls.Add(this.lblWelcome);
@@ -287,5 +365,11 @@ namespace StudentHousingBV
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblAccount;
         private System.Windows.Forms.PictureBox pbAccountSettings;
+        private System.Windows.Forms.ListBox lbNewComplaints;
+        private System.Windows.Forms.Label lblNewComplaints;
+        private System.Windows.Forms.Label lblLatestAnnouncements;
+        private System.Windows.Forms.ListBox lbLatestAnnouncements;
+        private System.Windows.Forms.Button btnViewNewComplaint;
+        private System.Windows.Forms.Button btnViewLatestAnnouncement;
     }
 }
