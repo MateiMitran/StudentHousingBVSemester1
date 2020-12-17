@@ -29,84 +29,59 @@ namespace StudentHousingBV
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.pnlTitle = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.lblNotice = new System.Windows.Forms.Label();
+            this.lbAnnouncements = new System.Windows.Forms.ListBox();
+            this.pnlTitle.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // pnlTitle
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(266, 51);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.pnlTitle.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.pnlTitle.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlTitle.Controls.Add(this.lblTitle);
+            this.pnlTitle.Location = new System.Drawing.Point(12, 12);
+            this.pnlTitle.Name = "pnlTitle";
+            this.pnlTitle.Size = new System.Drawing.Size(266, 51);
+            this.pnlTitle.TabIndex = 1;
             // 
-            // label1
+            // lblTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Announcements:";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(3, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(243, 32);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Announcements:";
             // 
-            // label2
+            // lblNotice
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(9, 424);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(632, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "\"Student Housing BV\" will update this tab every time an impoertant event is sched" +
+            this.lblNotice.AutoSize = true;
+            this.lblNotice.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotice.Location = new System.Drawing.Point(9, 424);
+            this.lblNotice.Name = "lblNotice";
+            this.lblNotice.Size = new System.Drawing.Size(632, 17);
+            this.lblNotice.TabIndex = 2;
+            this.lblNotice.Text = "\"Student Housing BV\" will update this tab every time an impoertant event is sched" +
     "uled";
             // 
-            // label3
+            // lbAnnouncements
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 248);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(433, 29);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "See what your neighbours are up to:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(56, 306);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(297, 17);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "- Pizza party at 20:00, everybody is welcomed";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(18, 112);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(303, 29);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "General announcements:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(56, 164);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(279, 17);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "-Sink repair scheduled for 14:30, Thursday";
+            this.lbAnnouncements.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbAnnouncements.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbAnnouncements.ForeColor = System.Drawing.Color.Maroon;
+            this.lbAnnouncements.FormattingEnabled = true;
+            this.lbAnnouncements.ItemHeight = 25;
+            this.lbAnnouncements.Items.AddRange(new object[] {
+            "-Sink repair scheduled for 14:30, Thursday",
+            "-Pizza party at 20:00, everybody is welcomed!"});
+            this.lbAnnouncements.Location = new System.Drawing.Point(12, 95);
+            this.lbAnnouncements.Name = "lbAnnouncements";
+            this.lbAnnouncements.Size = new System.Drawing.Size(689, 279);
+            this.lbAnnouncements.TabIndex = 7;
+            this.lbAnnouncements.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // TenantAnnouncements
             // 
@@ -114,16 +89,16 @@ namespace StudentHousingBV
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.lbAnnouncements);
+            this.Controls.Add(this.lblNotice);
+            this.Controls.Add(this.pnlTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "TenantAnnouncements";
             this.Text = "General announcements";
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
+            this.pnlTitle.ResumeLayout(false);
+            this.pnlTitle.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,12 +106,9 @@ namespace StudentHousingBV
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.FlowLayoutPanel pnlTitle;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblNotice;
+        private System.Windows.Forms.ListBox lbAnnouncements;
     }
 }

@@ -1,3 +1,5 @@
-tenant password user
+MitranMatei password user
+IoanPopa password user
+AlexanderBogdanov password user
 admin password admin
 test test test

@@ -14,15 +14,51 @@ namespace StudentHousingBV
 {
     public partial class LogInScreen : Form
     {
+        
+        private List<Tenant> tenants = new List<Tenant>();
         public LogInScreen()
         {
             InitializeComponent();
+            initializeTenants();
+        }
+        private void initializeTenants()
+        {
+            Tenant firstTenant = new Tenant("MitranMatei");
+            Tenant secondTenant = new Tenant("AlexanderBogdanov");
+            Tenant thirdTenant = new Tenant("IoanPopa");
+            firstTenant.makeStudentOfTheMonth();
+            tenants.Add(firstTenant);
+            tenants.Add(secondTenant);
+            tenants.Add(thirdTenant);
+        }
+        public List<Tenant> getTenants()
+        {
+            return tenants;
+        }
+        public String getTenant()
+        {
+            return this.tbUserName.Text;
+        }
+        private void button_WOC1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblUserName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
+                
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
             // Get typed in username and password
-            String enteredUsername = tbUsername.Text;
+            String enteredUsername = tbUserName.Text;
             String enteredPassword = tbPassword.Text;
 
             String line;
@@ -30,7 +66,7 @@ namespace StudentHousingBV
 
             bool loggedIn = false;
             bool encounteredError = false;
-            
+
             // Read users.txt and compare values
             String path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"../../users.txt");
             System.IO.StreamReader file = new System.IO.StreamReader(path);
@@ -41,30 +77,32 @@ namespace StudentHousingBV
                 String username = elements[0];
                 String password = elements[1];
                 String role = elements[2];
-                
-                if(enteredUsername == username)
+
+                if (enteredUsername == username)
                 {
-                    if(enteredPassword == password)
+                    if (enteredPassword == password)
                     {
-                        if(role == "admin")
+                        if (role == "admin")
                         {
                             // Go to Company form
 
                             this.Hide();
                             CompanyHome companyScreen = new CompanyHome();
                             companyScreen.Show();
-                        } else if(role == "user")
+                        }
+                        else if (role == "user")
                         {
                             // Go to Tenant form
 
                             this.Hide();
                             TenantHome tenantScreen = new TenantHome();
                             tenantScreen.Show();
-                        } else
+                        }
+                        else
                         {
                             // No such role
 
-                            tbUsername.Text = "";
+                            tbUserName.Text = "";
                             tbPassword.Text = "";
 
                             MessageBox.Show("An error occured, please try logging in with a different account");
@@ -81,15 +119,35 @@ namespace StudentHousingBV
                 counter++;
             }
 
-            if(loggedIn == false && encounteredError == false)
+            if (loggedIn == false && encounteredError == false)
             {
                 // If login failed
 
-                tbUsername.Text = "";
+                tbUserName.Text = "";
                 tbPassword.Text = "";
 
                 MessageBox.Show("Invalid username or password");
             }
+        }
+
+        private void LogInScreen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogIn_MouseHover(object sender, EventArgs e)
+        {
+            this.btnLogIn.ForeColor = Color.Green;
+        }
+
+        private void btnLogIn_MouseLeave(object sender, EventArgs e)
+        {
+            this.btnLogIn.ForeColor = Color.Black;
         }
     }
 }

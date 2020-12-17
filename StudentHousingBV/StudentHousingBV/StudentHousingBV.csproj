@@ -76,11 +76,24 @@
     <Compile Include="Company\CompanyRules.Designer.cs">
       <DependentUpon>CompanyRules.cs</DependentUpon>
     </Compile>
+    <Compile Include="Company\CompanyTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyTasks.Designer.cs">
+      <DependentUpon>CompanyTasks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Company\CompanyTenants.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Company\CompanyTenants.Designer.cs">
       <DependentUpon>CompanyTenants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tenant.cs" />
+    <Compile Include="Tenant\TenantTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tenant\TenantTasks.Designer.cs">
+      <DependentUpon>TenantTasks.cs</DependentUpon>
     </Compile>
     <Compile Include="Tenant\TenantAccount.cs">
       <SubType>Form</SubType>
@@ -123,9 +136,6 @@
     <EmbeddedResource Include="Company\CompanyAccount.resx">
       <DependentUpon>CompanyAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Company\CompanyAnnouncements.resx">
-      <DependentUpon>CompanyAnnouncements.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Company\CompanyComplaints.resx">
       <DependentUpon>CompanyComplaints.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Company\CompanyRules.resx">
       <DependentUpon>CompanyRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\CompanyTasks.resx">
+      <DependentUpon>CompanyTasks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tenant\TenantAccount.resx">
       <DependentUpon>TenantAccount.cs</DependentUpon>
@@ -162,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tenant\TenantRules.resx">
       <DependentUpon>TenantRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tenant\TenantTasks.resx">
+      <DependentUpon>TenantTasks.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

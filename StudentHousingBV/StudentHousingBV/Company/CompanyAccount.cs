@@ -16,5 +16,19 @@ namespace StudentHousingBV
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            LogInScreen login = new LogInScreen();
+            CompanyHome home = (CompanyHome)Application.OpenForms["CompanyHome"];
+            this.Hide();
+            home.Hide();
+            login.Show();
+        }
     }
 }
