@@ -63,3 +63,4 @@ C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\De
 C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAnnouncements.resources
 C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyComplaints.resources
 C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAccount.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Company.CompanyRulesAddNew.resources

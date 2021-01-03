@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentHousingBV.Company;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace StudentHousingBV
         public CompanyRules()
         {
             InitializeComponent();
+        }
+
+        private void btnAddRule_Click(object sender, EventArgs e)
+        {
+            CompanyRulesAddNew newCompaint = new CompanyRulesAddNew();
+            newCompaint.Show();
         }
     }
 }

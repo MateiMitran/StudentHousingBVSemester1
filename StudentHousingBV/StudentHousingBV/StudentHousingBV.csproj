@@ -76,6 +76,12 @@
     <Compile Include="Company\CompanyRules.Designer.cs">
       <DependentUpon>CompanyRules.cs</DependentUpon>
     </Compile>
+    <Compile Include="Company\CompanyRulesAddNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyRulesAddNew.Designer.cs">
+      <DependentUpon>CompanyRulesAddNew.cs</DependentUpon>
+    </Compile>
     <Compile Include="Company\CompanyTenants.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Company\CompanyRules.resx">
       <DependentUpon>CompanyRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\CompanyRulesAddNew.resx">
+      <DependentUpon>CompanyRulesAddNew.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tenant\TenantAccount.resx">
       <DependentUpon>TenantAccount.cs</DependentUpon>

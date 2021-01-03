@@ -80,6 +80,7 @@ namespace StudentHousingBV
             this.btnAddRule.TabIndex = 3;
             this.btnAddRule.Text = "Add";
             this.btnAddRule.UseVisualStyleBackColor = true;
+            this.btnAddRule.Click += new System.EventHandler(this.btnAddRule_Click);
             // 
             // btnViewRule
             // 
