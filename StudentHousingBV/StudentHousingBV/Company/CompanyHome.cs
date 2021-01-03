@@ -37,9 +37,9 @@ namespace StudentHousingBV
 
         private void lblLogOut_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            LogInScreen login = new LogInScreen();
-            login.Show();
+            
+            CompanyTasks tasks = new CompanyTasks();
+            tasks.Show();
         }
 
         private void lblRules_Click(object sender, EventArgs e)
@@ -68,6 +68,11 @@ namespace StudentHousingBV
         private void lbLatestAnnouncements_SelectedIndexChanged(object sender, EventArgs e)
         {
             btnViewLatestAnnouncement.Visible = true;
+        }
+
+        private void CompanyHome_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

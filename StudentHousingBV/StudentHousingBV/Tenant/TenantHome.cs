@@ -12,16 +12,38 @@ namespace StudentHousingBV
 {
     public partial class TenantHome : Form
     {
+        private Tenant currentTenant;
+        private List<Tenant> allTenants;
         public TenantHome()
         {
             InitializeComponent();
+            
+            
+        }
+
+        public int getReports()
+        {
+            return currentTenant.getReports();
+        }
+        public Tenant getTenant()
+        {
+            return currentTenant;
+        }
+
+        public void AddComplaints(Tenant reportedTenant,String complaint)
+        {
+            reportedTenant.addComplaints(complaint);
         }
 
         private void ClientHome_Load(object sender, EventArgs e)
         {
-
+            LogInScreen login = (LogInScreen)Application.OpenForms["LogInScreen"];
+            allTenants = login.getTenants();
+            for (int i = 0; i < allTenants.Count; i++)
+                if (allTenants[i].getName() == login.getTenant())
+                    currentTenant = allTenants[i];
+       //  if we put this in nothin works lol  lblWelcome.Text = "Welcome, " + currentTenant.getName() + " !";
         }
-
         private void label12_Click(object sender, EventArgs e)
         {
 
@@ -48,9 +70,9 @@ namespace StudentHousingBV
 
         private void lblLogOut_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            LogInScreen login = new LogInScreen();
-            login.Show();
+            
+            TenantTasks tasks = new TenantTasks();
+            tasks.Show();
         }
 
         private void lblRules_Click(object sender, EventArgs e)

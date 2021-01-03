@@ -29,84 +29,86 @@ namespace StudentHousingBV
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.lblNotice = new System.Windows.Forms.Label();
+            this.pnlRules = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.lbRules = new System.Windows.Forms.ListBox();
+            this.pnlRules.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label2
+            // lblNotice
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 647);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1102, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Note that ruler are subject to change by \"Student Housing BV\". Rules are placed f" +
-    "or everybody to follow";
+            this.lblNotice.AutoSize = true;
+            this.lblNotice.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotice.Location = new System.Drawing.Point(12, 414);
+            this.lblNotice.Name = "lblNotice";
+            this.lblNotice.Size = new System.Drawing.Size(794, 17);
+            this.lblNotice.TabIndex = 1;
+            this.lblNotice.Text = "Note that the rules are subject to change by \"Student Housing BV\". Rules are plac" +
+    "ed for everybody to follow";
             // 
-            // flowLayoutPanel1
+            // pnlRules
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(22, 19);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(168, 74);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.pnlRules.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.pnlRules.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlRules.Controls.Add(this.lblTitle);
+            this.pnlRules.Location = new System.Drawing.Point(15, 12);
+            this.pnlRules.Name = "pnlRules";
+            this.pnlRules.Size = new System.Drawing.Size(113, 49);
+            this.pnlRules.TabIndex = 0;
             // 
-            // label1
+            // lblTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 52);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Rules:";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(3, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(102, 32);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Rules:";
+            this.lblTitle.Click += new System.EventHandler(this.label1_Click);
             // 
-            // listBox1
+            // lbRules
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Items.AddRange(new object[] {
-            "No leaving or entering the premises without locking the front door",
-            "Always keep your surroundings as clean as possible",
-            "Have respect for the other tennants"});
-            this.listBox1.Location = new System.Drawing.Point(22, 139);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(888, 404);
-            this.listBox1.TabIndex = 5;
+            this.lbRules.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbRules.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbRules.ForeColor = System.Drawing.Color.Maroon;
+            this.lbRules.FormattingEnabled = true;
+            this.lbRules.ItemHeight = 25;
+            this.lbRules.Items.AddRange(new object[] {
+            "-Always keep your surroundings as clean as possible",
+            "-Have respect for the other tenants",
+            "-No leaving or entering the premises without locking the front door"});
+            this.lbRules.Location = new System.Drawing.Point(26, 92);
+            this.lbRules.Name = "lbRules";
+            this.lbRules.Size = new System.Drawing.Size(689, 279);
+            this.lbRules.TabIndex = 5;
             // 
             // TenantRules
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1196, 703);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ClientSize = new System.Drawing.Size(804, 450);
+            this.Controls.Add(this.lbRules);
+            this.Controls.Add(this.pnlRules);
+            this.Controls.Add(this.lblNotice);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "TenantRules";
             this.Text = "TenantRules";
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
+            this.pnlRules.ResumeLayout(false);
+            this.pnlRules.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label lblNotice;
+        private System.Windows.Forms.FlowLayoutPanel pnlRules;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.ListBox lbRules;
     }
 }

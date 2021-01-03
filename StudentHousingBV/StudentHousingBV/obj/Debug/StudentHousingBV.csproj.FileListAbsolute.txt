@@ -11,6 +11,7 @@ C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\Studen
 C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantHome.resources
 C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantComplaint.resources
 C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyHome.resources
+<<<<<<< HEAD
 C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe.config
 C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe
 C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.pdb
@@ -64,3 +65,13 @@ C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\De
 C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyComplaints.resources
 C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAccount.resources
 C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Company.CompanyRulesAddNew.resources
+=======
+C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAccount.resources
+C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAnnouncements.resources
+C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantRules.resources
+C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantTasks.resources
+C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAccount.resources
+C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyRules.resources
+C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyTasks.resources
+C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyComplaints.resources
+>>>>>>> 050065356f7fb8f97312c27e7bf3104eb20211cd

@@ -29,109 +29,146 @@ namespace StudentHousingBV
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.panelComplaints = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblComplaints = new System.Windows.Forms.Label();
+            this.lblChoose = new System.Windows.Forms.Label();
+            this.lblCustom = new System.Windows.Forms.Label();
+            this.tbCustom = new System.Windows.Forms.TextBox();
+            this.cbxTenants = new System.Windows.Forms.ComboBox();
+            this.lblChooseATenant = new System.Windows.Forms.Label();
+            this.btnFile = new System.Windows.Forms.Button();
+            this.rbTrash = new System.Windows.Forms.RadioButton();
+            this.rbDirty = new System.Windows.Forms.RadioButton();
+            this.rbLoud = new System.Windows.Forms.RadioButton();
+            this.rbUnlocked = new System.Windows.Forms.RadioButton();
+            this.panelComplaints.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // panelComplaints
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(22, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(195, 51);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.panelComplaints.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.panelComplaints.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelComplaints.Controls.Add(this.lblComplaints);
+            this.panelComplaints.Location = new System.Drawing.Point(22, 12);
+            this.panelComplaints.Name = "panelComplaints";
+            this.panelComplaints.Size = new System.Drawing.Size(195, 51);
+            this.panelComplaints.TabIndex = 0;
+            this.panelComplaints.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
-            // label1
+            // lblComplaints
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Complaints:";
+            this.lblComplaints.AutoSize = true;
+            this.lblComplaints.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComplaints.Location = new System.Drawing.Point(3, 0);
+            this.lblComplaints.Name = "lblComplaints";
+            this.lblComplaints.Size = new System.Drawing.Size(177, 32);
+            this.lblComplaints.TabIndex = 0;
+            this.lblComplaints.Text = "Complaints:";
             // 
-            // label2
+            // lblChoose
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 111);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(324, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Choose what has bothered you: ";
+            this.lblChoose.AutoSize = true;
+            this.lblChoose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChoose.Location = new System.Drawing.Point(17, 111);
+            this.lblChoose.Name = "lblChoose";
+            this.lblChoose.Size = new System.Drawing.Size(324, 25);
+            this.lblChoose.TabIndex = 0;
+            this.lblChoose.Text = "Choose what has bothered you: ";
             // 
-            // label3
+            // lblCustom
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(428, 111);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(435, 25);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Something out of the ordinary? Let us know:";
+            this.lblCustom.AutoSize = true;
+            this.lblCustom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustom.Location = new System.Drawing.Point(428, 111);
+            this.lblCustom.Name = "lblCustom";
+            this.lblCustom.Size = new System.Drawing.Size(435, 25);
+            this.lblCustom.TabIndex = 0;
+            this.lblCustom.Text = "Something out of the ordinary? Let us know:";
             // 
-            // checkBox1
+            // tbCustom
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(22, 207);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(184, 24);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Trash not taken out?";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.tbCustom.Location = new System.Drawing.Point(433, 154);
+            this.tbCustom.Multiline = true;
+            this.tbCustom.Name = "tbCustom";
+            this.tbCustom.Size = new System.Drawing.Size(431, 200);
+            this.tbCustom.TabIndex = 5;
             // 
-            // checkBox2
+            // cbxTenants
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(22, 277);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(169, 24);
-            this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "Dirty living space?";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbxTenants.FormattingEnabled = true;
+            this.cbxTenants.Location = new System.Drawing.Point(433, 60);
+            this.cbxTenants.Name = "cbxTenants";
+            this.cbxTenants.Size = new System.Drawing.Size(258, 24);
+            this.cbxTenants.TabIndex = 6;
             // 
-            // checkBox3
+            // lblChooseATenant
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(22, 351);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(189, 24);
-            this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "Neighbours too loud?";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.lblChooseATenant.AutoSize = true;
+            this.lblChooseATenant.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblChooseATenant.Location = new System.Drawing.Point(428, 32);
+            this.lblChooseATenant.Name = "lblChooseATenant";
+            this.lblChooseATenant.Size = new System.Drawing.Size(178, 25);
+            this.lblChooseATenant.TabIndex = 7;
+            this.lblChooseATenant.Text = "Choose a tenant!";
             // 
-            // checkBox4
+            // btnFile
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(22, 428);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(231, 24);
-            this.checkBox4.TabIndex = 4;
-            this.checkBox4.Text = "Main door found unlocked?";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.btnFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnFile.Location = new System.Drawing.Point(433, 413);
+            this.btnFile.Name = "btnFile";
+            this.btnFile.Size = new System.Drawing.Size(429, 73);
+            this.btnFile.TabIndex = 8;
+            this.btnFile.Text = "File Complaint";
+            this.btnFile.UseVisualStyleBackColor = true;
+            this.btnFile.Click += new System.EventHandler(this.btnFile_Click);
             // 
-            // textBox1
+            // rbTrash
             // 
-            this.textBox1.Location = new System.Drawing.Point(433, 154);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(431, 200);
-            this.textBox1.TabIndex = 5;
+            this.rbTrash.AutoSize = true;
+            this.rbTrash.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.rbTrash.Location = new System.Drawing.Point(22, 189);
+            this.rbTrash.Name = "rbTrash";
+            this.rbTrash.Size = new System.Drawing.Size(183, 24);
+            this.rbTrash.TabIndex = 9;
+            this.rbTrash.TabStop = true;
+            this.rbTrash.Text = "Trash not taken out?";
+            this.rbTrash.UseVisualStyleBackColor = true;
+            // 
+            // rbDirty
+            // 
+            this.rbDirty.AutoSize = true;
+            this.rbDirty.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.rbDirty.Location = new System.Drawing.Point(22, 247);
+            this.rbDirty.Name = "rbDirty";
+            this.rbDirty.Size = new System.Drawing.Size(168, 24);
+            this.rbDirty.TabIndex = 10;
+            this.rbDirty.TabStop = true;
+            this.rbDirty.Text = "Dirty living space?";
+            this.rbDirty.UseVisualStyleBackColor = true;
+            // 
+            // rbLoud
+            // 
+            this.rbLoud.AutoSize = true;
+            this.rbLoud.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.rbLoud.Location = new System.Drawing.Point(22, 303);
+            this.rbLoud.Name = "rbLoud";
+            this.rbLoud.Size = new System.Drawing.Size(188, 24);
+            this.rbLoud.TabIndex = 11;
+            this.rbLoud.TabStop = true;
+            this.rbLoud.Text = "Neighbours too loud?";
+            this.rbLoud.UseVisualStyleBackColor = true;
+            // 
+            // rbUnlocked
+            // 
+            this.rbUnlocked.AutoSize = true;
+            this.rbUnlocked.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.rbUnlocked.Location = new System.Drawing.Point(22, 366);
+            this.rbUnlocked.Name = "rbUnlocked";
+            this.rbUnlocked.Size = new System.Drawing.Size(230, 24);
+            this.rbUnlocked.TabIndex = 12;
+            this.rbUnlocked.TabStop = true;
+            this.rbUnlocked.Text = "Main door found unlocked?";
+            this.rbUnlocked.UseVisualStyleBackColor = true;
             // 
             // TenantComplaint
             // 
@@ -139,18 +176,25 @@ namespace StudentHousingBV
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1015, 552);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.rbUnlocked);
+            this.Controls.Add(this.rbLoud);
+            this.Controls.Add(this.rbDirty);
+            this.Controls.Add(this.rbTrash);
+            this.Controls.Add(this.btnFile);
+            this.Controls.Add(this.lblChooseATenant);
+            this.Controls.Add(this.cbxTenants);
+            this.Controls.Add(this.tbCustom);
+            this.Controls.Add(this.lblCustom);
+            this.Controls.Add(this.lblChoose);
+            this.Controls.Add(this.panelComplaints);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "TenantComplaint";
             this.Text = "TenantComplaint";
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
+            this.Load += new System.EventHandler(this.TenantComplaint_Load);
+            this.panelComplaints.ResumeLayout(false);
+            this.panelComplaints.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,14 +202,17 @@ namespace StudentHousingBV
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.FlowLayoutPanel panelComplaints;
+        private System.Windows.Forms.Label lblComplaints;
+        private System.Windows.Forms.Label lblChoose;
+        private System.Windows.Forms.Label lblCustom;
+        private System.Windows.Forms.TextBox tbCustom;
+        private System.Windows.Forms.ComboBox cbxTenants;
+        private System.Windows.Forms.Label lblChooseATenant;
+        private System.Windows.Forms.Button btnFile;
+        private System.Windows.Forms.RadioButton rbTrash;
+        private System.Windows.Forms.RadioButton rbDirty;
+        private System.Windows.Forms.RadioButton rbLoud;
+        private System.Windows.Forms.RadioButton rbUnlocked;
     }
 }
