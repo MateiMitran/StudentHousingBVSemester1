@@ -1,0 +1,13 @@
+#1 December 4th 2020, 17 minutes and 35 seconds
+-Implement CRUD
+-Make work schedule
+#2 December 11th 2020, 17 minutes and 50 seconds
+-Create Task System
+-Update Project Analysis
+-Upload GIT URL on Canvas
+-Upload Project Analysis on Canvas
+#3 January 8th 2021, 20 minutes and 25 seconds
+-Change password from account
+-Remove remove complaints button from admin
+-Due date and status for tasks
+
