@@ -6,5 +6,8 @@
 -Update Project Analysis
 -Upload GIT URL on Canvas
 -Upload Project Analysis on Canvas
-
+#3 January 8th 2021, 20 minutes and 25 seconds
+-Change password from account
+-Remove remove complaints button from admin
+-Due date and status for tasks
 
