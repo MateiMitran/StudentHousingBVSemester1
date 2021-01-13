@@ -6,20 +6,72 @@ using System.Threading.Tasks;
 
 namespace StudentHousingBV
 {
-   public class Tenant
+     public class TenantClass
     {
+        public int moneyContributed = 2;
+        public int voteContributed = 1;
         private String name;
+        private String password;
         private int reports;
         private List<String> complaints = new List<String>();
         private List<String> tasks = new List<String>();
         private bool studentOfTheMonth = false;
-        public Tenant(String name1)
+        private int bank;
+        public int balance = 10;
+        public int option = 1;
+        public bool voted = false;
+        public bool choose = false;
+        public TenantClass(String nameOfTenant, String tenantPassword)
         {
-            name = name1;
+            name = nameOfTenant;
+            password = tenantPassword;
         }
+        public bool Contribution()
+        {
+            if (this.balance >= this.moneyContributed)
+            {
+                this.balance -= this.moneyContributed;
+                this.voted = true;
+                return true;
+
+            }
+            return false;
+        }
+        public bool Chose()
+        {
+            if (this.option == 1)
+            {
+                this.option -= 1;
+                this.choose = true;
+                return true;
+            }
+            return false;
+        }
+
+        public int Bank
+        {
+            get { return this.bank; }
+            set { this.bank = value; }
+        }
+
+        public void addMoney(int value)
+        {
+            this.balance += value;
+        }
+
         public String getName()
         {
             return name;
+        }
+
+        public String getPassword()
+        {
+            return password;
+        }
+
+        public void setPassword(String newPassword)
+        {
+            password = newPassword;
         }
         public void addComplaints(String complaint)
         {

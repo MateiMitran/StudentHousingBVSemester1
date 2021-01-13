@@ -12,8 +12,9 @@ namespace StudentHousingBV
 {
     public partial class TenantComplaint : Form
     {
-        List<Tenant> alltenants = new List<Tenant>();
-        Tenant reportedTenant;
+        List<TenantClass> alltenants = new List<TenantClass>();
+        TenantClass reportedTenant;
+        TenantClass currentTenant;
         public TenantComplaint()
         {
             InitializeComponent();
@@ -28,8 +29,14 @@ namespace StudentHousingBV
         {
             LogInScreen login = (LogInScreen)Application.OpenForms["LogInScreen"];
             alltenants = login.getTenants();
+            TenantHome home = (TenantHome)Application.OpenForms["TenantHome"];
+            currentTenant = home.getTenant();
             for (int i = 0; i < alltenants.Count(); i++)
-                this.cbxTenants.Items.Add(alltenants[i].getName());
+            {
+                if (alltenants[i]!=currentTenant)
+                    this.cbxTenants.Items.Add(alltenants[i].getName());
+            }
+                
         }
 
         private void btnFile_Click(object sender, EventArgs e)
@@ -40,15 +47,35 @@ namespace StudentHousingBV
                  if (alltenants[i].getName() == Convert.ToString(this.cbxTenants.SelectedItem))
                        reportedTenant = alltenants[i];
              if (this.rbLoud.Checked)
-                 reportedTenant.addComplaints("Noise");
+            {
+                reportedTenant.addComplaints("Noise");
+                MessageBox.Show("Complaint filed!");
+            }
+                 
              else if (this.rbDirty.Checked)
-                 reportedTenant.addComplaints("Dirty");
+            {
+                reportedTenant.addComplaints("Dirty");
+                MessageBox.Show("Complaint filed!");
+            }
+                 
              else if (this.rbTrash.Checked)
-                 reportedTenant.addComplaints("Trash");
+            {
+                reportedTenant.addComplaints("Trash");
+                MessageBox.Show("Complaint filed!");
+            }
+                 
              else if (this.rbUnlocked.Checked)
-                 reportedTenant.addComplaints("Unlocked");
+            {
+                reportedTenant.addComplaints("Unlocked");
+                MessageBox.Show("Complaint filed!");
+            }
+                 
              else if (this.tbCustom.TextLength > 0)
-                 reportedTenant.addComplaints(this.tbCustom.Text);
+            {
+                reportedTenant.addComplaints(this.tbCustom.Text);
+                MessageBox.Show("Complaint filed!");
+            }
+                 
              else
                  MessageBox.Show("No complaint selected!"); 
           

@@ -12,8 +12,8 @@ namespace StudentHousingBV
 {
     public partial class CompanyComplaints : Form
     {
-        List<Tenant> allTenants;
-        Tenant currentTenant;
+        List<TenantClass> allTenants;
+        TenantClass currentTenant;
         List<String> complaints;
         public CompanyComplaints()
         {

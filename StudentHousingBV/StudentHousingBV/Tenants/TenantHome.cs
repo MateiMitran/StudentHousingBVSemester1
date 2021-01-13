@@ -12,25 +12,23 @@ namespace StudentHousingBV
 {
     public partial class TenantHome : Form
     {
-        private Tenant currentTenant;
-        private List<Tenant> allTenants;
+        private TenantClass currentTenant;
+        private List<TenantClass> allTenants;
         public TenantHome()
         {
             InitializeComponent();
-            
-            
         }
 
         public int getReports()
         {
             return currentTenant.getReports();
         }
-        public Tenant getTenant()
+        public TenantClass getTenant()
         {
             return currentTenant;
         }
 
-        public void AddComplaints(Tenant reportedTenant,String complaint)
+        public void AddComplaints(TenantClass reportedTenant,String complaint)
         {
             reportedTenant.addComplaints(complaint);
         }
@@ -39,14 +37,15 @@ namespace StudentHousingBV
         {
             LogInScreen login = (LogInScreen)Application.OpenForms["LogInScreen"];
             allTenants = login.getTenants();
-            for (int i = 0; i < allTenants.Count; i++)
-                if (allTenants[i].getName() == login.getTenant())
-                    currentTenant = allTenants[i];
-       //  if we put this in nothin works lol  lblWelcome.Text = "Welcome, " + currentTenant.getName() + " !";
-        }
-        private void label12_Click(object sender, EventArgs e)
-        {
+            for (int i=0;i<allTenants.Count;i++)
+            {
+                if (allTenants[i].isStudentOfTheMonth() == true)
+                    this.lblSoTM.Text = allTenants[i].getName();
 
+            }
+
+            currentTenant = login.getTenant();
+            lblWelcome.Text = "Welcome, " + currentTenant.getName() + " !";
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -81,9 +80,10 @@ namespace StudentHousingBV
             rules.Show();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void lblEssentials_Click(object sender, EventArgs e)
         {
-
+            TenantEsentials esentials = new TenantEsentials();
+            esentials.Show();
         }
     }
 }

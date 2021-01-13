@@ -15,44 +15,109 @@ namespace StudentHousingBV
     public partial class LogInScreen : Form
     {
         
-        private List<Tenant> tenants = new List<Tenant>();
+        private List<TenantClass> tenants = new List<TenantClass>();
+        private List<Admin> admins = new List<Admin>();
+        private List<String> announcements = new List<String>();
+        private List<String> rules = new List<String>();
+        private String tenantName;
+        private String adminName;
+        private TenantClass currentTenant;
+        private Admin currentAdmin;
+        
         public LogInScreen()
         {
             InitializeComponent();
             initializeTenants();
+            initializeAnnouncements();
+            initializeRules();
         }
-        private void initializeTenants()
+        public void initializeTenants()
         {
-            Tenant firstTenant = new Tenant("MitranMatei");
-            Tenant secondTenant = new Tenant("AlexanderBogdanov");
-            Tenant thirdTenant = new Tenant("IoanPopa");
-            firstTenant.makeStudentOfTheMonth();
-            tenants.Add(firstTenant);
-            tenants.Add(secondTenant);
-            tenants.Add(thirdTenant);
+            tenants.Clear();
+            String line;
+
+            // Read users.txt and get all tenants
+            String path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"../../users.txt");
+            System.IO.StreamReader file = new System.IO.StreamReader(path);
+
+            while ((line = file.ReadLine()) != null)
+            {
+                String[] elements = line.Split(' ');
+                String username = elements[0];
+                String password = elements[1];
+                String role = elements[2];
+
+                if(role == "user") {
+                    TenantClass newTenant = new TenantClass(username, password);
+                    tenants.Add(newTenant);
+                } else if(role == "admin")
+                {
+                    Admin newAdmin = new Admin(username, password);
+                    admins.Add(newAdmin);
+                }
+            }
+            file.Close();
+            
+            tenants[0].makeStudentOfTheMonth();
         }
-        public List<Tenant> getTenants()
+
+        private void initializeAnnouncements()
+        {
+            announcements.Add("Pizza party at 20:00, Friday");
+            announcements.Add("Movie night at 21:00, Saturday");
+        }
+
+        private void initializeRules()
+        {
+            rules.Add("Clean up after yourselves");
+            rules.Add("Always lock the front door when leaving");
+            rules.Add("No parties due to COVID19");
+        }
+        public void updateRules(String rule)
+        {
+            rules.Add(rule);
+        }
+        public void removeRule(String rule)
+        {
+            rules.Remove(rule);
+        }
+        public List<String> getRules()
+        {
+            return rules;
+        }
+        public void updateAnnouncements(String announcement)
+        {
+            announcements.Add(announcement);
+        }
+
+        public void removeAnnouncement(String announcement)
+        {
+            announcements.Remove(announcement);
+        }
+        public List<String> getAnnouncements()
+        {
+            return announcements;
+        }
+        public List<TenantClass> getTenants()
         {
             return tenants;
         }
-        public String getTenant()
+        public void addTenant(TenantClass x)
         {
-            return this.tbUserName.Text;
+            tenants.Add(x);
         }
-        private void button_WOC1_Click(object sender, EventArgs e)
+        public String getTenantName()
         {
-
+            return tenantName;
+        }
+        public TenantClass getTenant()
+        {
+            return currentTenant;
         }
 
-        private void lblUserName_Click(object sender, EventArgs e)
+        public Admin getAdmin()
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            
-                
+            return currentAdmin;
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)
@@ -82,11 +147,17 @@ namespace StudentHousingBV
                 {
                     if (enteredPassword == password)
                     {
+                        
                         if (role == "admin")
                         {
                             // Go to Company form
 
+                            adminName = this.tbUserName.Text;
+                            for (int i = 0; i < admins.Count(); i++)
+                                if (adminName == admins[i].getName())
+                                    currentAdmin = admins[i];
                             this.Hide();
+                            file.Close();
                             CompanyHome companyScreen = new CompanyHome();
                             companyScreen.Show();
                         }
@@ -94,7 +165,12 @@ namespace StudentHousingBV
                         {
                             // Go to Tenant form
 
+                            tenantName = this.tbUserName.Text;
+                            for (int i = 0; i < tenants.Count(); i++)
+                                if (tenantName == tenants[i].getName())
+                                    currentTenant = tenants[i];
                             this.Hide();
+                            file.Close();
                             TenantHome tenantScreen = new TenantHome();
                             tenantScreen.Show();
                         }
@@ -128,16 +204,6 @@ namespace StudentHousingBV
 
                 MessageBox.Show("Invalid username or password");
             }
-        }
-
-        private void LogInScreen_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbPassword_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnLogIn_MouseHover(object sender, EventArgs e)

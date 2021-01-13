@@ -46,6 +46,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs" />
+    <Compile Include="Announcement.cs" />
+    <Compile Include="Banks.cs" />
+    <Compile Include="Company\CompanyAddRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyAddRule.Designer.cs">
+      <DependentUpon>CompanyAddRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyUpdateRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyUpdateRule.Designer.cs">
+      <DependentUpon>CompanyUpdateRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyUpdateAnnouncement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyUpdateAnnouncement.Designer.cs">
+      <DependentUpon>CompanyUpdateAnnouncement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyAddAnnouncements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyAddAnnouncements.Designer.cs">
+      <DependentUpon>CompanyAddAnnouncements.cs</DependentUpon>
+    </Compile>
     <Compile Include="Company\CompanyAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,19 +103,11 @@
     <Compile Include="Company\CompanyRules.Designer.cs">
       <DependentUpon>CompanyRules.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="Company\CompanyRulesAddNew.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Company\CompanyRulesAddNew.Designer.cs">
-      <DependentUpon>CompanyRulesAddNew.cs</DependentUpon>
-=======
     <Compile Include="Company\CompanyTasks.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Company\CompanyTasks.Designer.cs">
       <DependentUpon>CompanyTasks.cs</DependentUpon>
->>>>>>> 050065356f7fb8f97312c27e7bf3104eb20211cd
     </Compile>
     <Compile Include="Company\CompanyTenants.cs">
       <SubType>Form</SubType>
@@ -96,23 +115,37 @@
     <Compile Include="Company\CompanyTenants.Designer.cs">
       <DependentUpon>CompanyTenants.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tenant.cs" />
-    <Compile Include="Tenant\TenantTasks.cs">
+    <Compile Include="Rule.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="TenantClass.cs" />
+    <Compile Include="Tenants\TenantChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tenant\TenantTasks.Designer.cs">
+    <Compile Include="Tenants\TenantChangePassword.Designer.cs">
+      <DependentUpon>TenantChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tenants\TenantEsentials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tenants\TenantEsentials.Designer.cs">
+      <DependentUpon>TenantEsentials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tenants\TenantTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tenants\TenantTasks.Designer.cs">
       <DependentUpon>TenantTasks.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tenant\TenantAccount.cs">
+    <Compile Include="Tenants\TenantAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tenant\TenantAccount.Designer.cs">
+    <Compile Include="Tenants\TenantAccount.Designer.cs">
       <DependentUpon>TenantAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tenant\TenantHome.cs">
+    <Compile Include="Tenants\TenantHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tenant\TenantHome.Designer.cs">
+    <Compile Include="Tenants\TenantHome.Designer.cs">
       <DependentUpon>TenantHome.cs</DependentUpon>
     </Compile>
     <Compile Include="LogInScreen.cs">
@@ -123,26 +156,41 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tenant\TenantAnnouncements.cs">
+    <Compile Include="Tenants\TenantAnnouncements.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tenant\TenantAnnouncements.Designer.cs">
+    <Compile Include="Tenants\TenantAnnouncements.Designer.cs">
       <DependentUpon>TenantAnnouncements.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tenant\TenantComplaint.cs">
+    <Compile Include="Tenants\TenantComplaint.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tenant\TenantComplaint.Designer.cs">
+    <Compile Include="Tenants\TenantComplaint.Designer.cs">
       <DependentUpon>TenantComplaint.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tenant\TenantRules.cs">
+    <Compile Include="Tenants\TenantRules.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tenant\TenantRules.Designer.cs">
+    <Compile Include="Tenants\TenantRules.Designer.cs">
       <DependentUpon>TenantRules.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Company\CompanyAddRule.resx">
+      <DependentUpon>CompanyAddRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\CompanyUpdateRule.resx">
+      <DependentUpon>CompanyUpdateRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\CompanyUpdateAnnouncement.resx">
+      <DependentUpon>CompanyUpdateAnnouncement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Company\CompanyAccount.resx">
       <DependentUpon>CompanyAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\CompanyAddAnnouncements.resx">
+      <DependentUpon>CompanyAddAnnouncements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\CompanyAnnouncements.resx">
+      <DependentUpon>CompanyAnnouncements.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Company\CompanyComplaints.resx">
       <DependentUpon>CompanyComplaints.cs</DependentUpon>
@@ -153,21 +201,25 @@
     <EmbeddedResource Include="Company\CompanyRules.resx">
       <DependentUpon>CompanyRules.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="Company\CompanyRulesAddNew.resx">
-      <DependentUpon>CompanyRulesAddNew.cs</DependentUpon>
-=======
     <EmbeddedResource Include="Company\CompanyTasks.resx">
       <DependentUpon>CompanyTasks.cs</DependentUpon>
->>>>>>> 050065356f7fb8f97312c27e7bf3104eb20211cd
     </EmbeddedResource>
-    <EmbeddedResource Include="Tenant\TenantAccount.resx">
+    <EmbeddedResource Include="Company\CompanyTenants.resx">
+      <DependentUpon>CompanyTenants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tenants\TenantChangePassword.resx">
+      <DependentUpon>TenantChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tenants\TenantEsentials.resx">
+      <DependentUpon>TenantEsentials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tenants\TenantAccount.resx">
       <DependentUpon>TenantAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tenant\TenantAnnouncements.resx">
+    <EmbeddedResource Include="Tenants\TenantAnnouncements.resx">
       <DependentUpon>TenantAnnouncements.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tenant\TenantHome.resx">
+    <EmbeddedResource Include="Tenants\TenantHome.resx">
       <DependentUpon>TenantHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogInScreen.resx">
@@ -183,13 +235,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Tenant\TenantComplaint.resx">
+    <EmbeddedResource Include="Tenants\TenantComplaint.resx">
       <DependentUpon>TenantComplaint.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tenant\TenantRules.resx">
+    <EmbeddedResource Include="Tenants\TenantRules.resx">
       <DependentUpon>TenantRules.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tenant\TenantTasks.resx">
+    <EmbeddedResource Include="Tenants\TenantTasks.resx">
       <DependentUpon>TenantTasks.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

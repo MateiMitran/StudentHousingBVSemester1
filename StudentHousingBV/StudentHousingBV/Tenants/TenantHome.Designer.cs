@@ -31,6 +31,8 @@ namespace StudentHousingBV
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TenantHome));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblEssentials = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblSHBV = new System.Windows.Forms.Label();
             this.lblTasks = new System.Windows.Forms.Label();
             this.lblAccount = new System.Windows.Forms.Label();
@@ -53,6 +55,8 @@ namespace StudentHousingBV
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel1.Controls.Add(this.lblEssentials);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblSHBV);
             this.panel1.Controls.Add(this.lblTasks);
             this.panel1.Controls.Add(this.lblAccount);
@@ -62,11 +66,31 @@ namespace StudentHousingBV
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(1, 2);
+            this.panel1.Location = new System.Drawing.Point(1, -3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1068, 78);
+            this.panel1.Size = new System.Drawing.Size(1165, 83);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // lblEssentials
+            // 
+            this.lblEssentials.AutoSize = true;
+            this.lblEssentials.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblEssentials.Location = new System.Drawing.Point(847, 30);
+            this.lblEssentials.Name = "lblEssentials";
+            this.lblEssentials.Size = new System.Drawing.Size(111, 20);
+            this.lblEssentials.TabIndex = 10;
+            this.lblEssentials.Text = "ESSENTIALS";
+            this.lblEssentials.Click += new System.EventHandler(this.lblEssentials_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(946, -30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 120);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "|";
             // 
             // lblSHBV
             // 
@@ -82,7 +106,7 @@ namespace StudentHousingBV
             // 
             this.lblTasks.AutoSize = true;
             this.lblTasks.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblTasks.Location = new System.Drawing.Point(918, 30);
+            this.lblTasks.Location = new System.Drawing.Point(704, 30);
             this.lblTasks.Name = "lblTasks";
             this.lblTasks.Size = new System.Drawing.Size(63, 20);
             this.lblTasks.TabIndex = 8;
@@ -93,7 +117,7 @@ namespace StudentHousingBV
             // 
             this.lblAccount.AutoSize = true;
             this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblAccount.Location = new System.Drawing.Point(710, 30);
+            this.lblAccount.Location = new System.Drawing.Point(1031, 30);
             this.lblAccount.Name = "lblAccount";
             this.lblAccount.Size = new System.Drawing.Size(91, 20);
             this.lblAccount.TabIndex = 6;
@@ -126,7 +150,7 @@ namespace StudentHousingBV
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Yi Baiti", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(816, -30);
+            this.label8.Location = new System.Drawing.Point(773, -30);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 120);
             this.label8.TabIndex = 7;
@@ -146,7 +170,7 @@ namespace StudentHousingBV
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(178, -30);
+            this.label2.Location = new System.Drawing.Point(177, -30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 120);
             this.label2.TabIndex = 1;
@@ -186,7 +210,7 @@ namespace StudentHousingBV
             this.lblRules.AutoSize = true;
             this.lblRules.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblRules.ForeColor = System.Drawing.Color.Red;
-            this.lblRules.Location = new System.Drawing.Point(921, 518);
+            this.lblRules.Location = new System.Drawing.Point(1064, 518);
             this.lblRules.Name = "lblRules";
             this.lblRules.Size = new System.Drawing.Size(82, 25);
             this.lblRules.TabIndex = 3;
@@ -203,23 +227,24 @@ namespace StudentHousingBV
             this.lblDescription.Text = "Student Housing B.V. is a housing company with over 2.500 acommodations \r\nthrough" +
     "out the Netherlands. We provide quality services, studios with their\r\nown bathro" +
     "oms and shared kitchens.\r\n";
-            this.lblDescription.Click += new System.EventHandler(this.label12_Click);
             // 
             // lblStudentMonth
             // 
             this.lblStudentMonth.AutoSize = true;
-            this.lblStudentMonth.Location = new System.Drawing.Point(711, 154);
+            this.lblStudentMonth.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentMonth.Location = new System.Drawing.Point(804, 113);
             this.lblStudentMonth.Name = "lblStudentMonth";
-            this.lblStudentMonth.Size = new System.Drawing.Size(184, 17);
+            this.lblStudentMonth.Size = new System.Drawing.Size(261, 28);
             this.lblStudentMonth.TabIndex = 5;
             this.lblStudentMonth.Text = "STUDENT OF THE MONTH";
             // 
             // lblSoTM
             // 
             this.lblSoTM.AutoSize = true;
-            this.lblSoTM.Location = new System.Drawing.Point(739, 171);
+            this.lblSoTM.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblSoTM.Location = new System.Drawing.Point(822, 141);
             this.lblSoTM.Name = "lblSoTM";
-            this.lblSoTM.Size = new System.Drawing.Size(129, 17);
+            this.lblSoTM.Size = new System.Drawing.Size(225, 29);
             this.lblSoTM.TabIndex = 6;
             this.lblSoTM.Text = "<PUTNAMEHERE>";
             // 
@@ -228,7 +253,7 @@ namespace StudentHousingBV
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1015, 552);
+            this.ClientSize = new System.Drawing.Size(1158, 552);
             this.Controls.Add(this.lblSoTM);
             this.Controls.Add(this.lblStudentMonth);
             this.Controls.Add(this.lblDescription);
@@ -268,5 +293,7 @@ namespace StudentHousingBV
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Label lblStudentMonth;
         private System.Windows.Forms.Label lblSoTM;
+        private System.Windows.Forms.Label lblEssentials;
+        private System.Windows.Forms.Label label1;
     }
 }

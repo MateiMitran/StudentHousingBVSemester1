@@ -75,10 +75,6 @@ namespace StudentHousingBV
             this.lbRules.ForeColor = System.Drawing.Color.Maroon;
             this.lbRules.FormattingEnabled = true;
             this.lbRules.ItemHeight = 25;
-            this.lbRules.Items.AddRange(new object[] {
-            "-Always keep your surroundings as clean as possible",
-            "-Have respect for the other tenants",
-            "-No leaving or entering the premises without locking the front door"});
             this.lbRules.Location = new System.Drawing.Point(26, 92);
             this.lbRules.Name = "lbRules";
             this.lbRules.Size = new System.Drawing.Size(689, 279);
@@ -89,7 +85,7 @@ namespace StudentHousingBV
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(804, 450);
+            this.ClientSize = new System.Drawing.Size(867, 450);
             this.Controls.Add(this.lbRules);
             this.Controls.Add(this.pnlRules);
             this.Controls.Add(this.lblNotice);
@@ -98,6 +94,7 @@ namespace StudentHousingBV
             this.MinimizeBox = false;
             this.Name = "TenantRules";
             this.Text = "TenantRules";
+            this.Load += new System.EventHandler(this.TenantRules_Load);
             this.pnlRules.ResumeLayout(false);
             this.pnlRules.PerformLayout();
             this.ResumeLayout(false);

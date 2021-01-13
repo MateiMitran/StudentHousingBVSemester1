@@ -29,32 +29,24 @@ namespace StudentHousingBV
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbAccount = new System.Windows.Forms.PictureBox();
             this.lblReports = new System.Windows.Forms.Label();
             this.pnlProfile = new System.Windows.Forms.FlowLayoutPanel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnLogOut = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAccount)).BeginInit();
+            this.pbAccount = new System.Windows.Forms.PictureBox();
+            this.btnChangePassword = new System.Windows.Forms.Button();
             this.pnlProfile.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAccount)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbAccount
-            // 
-            this.pbAccount.Image = global::StudentHousingBV.Properties.Resources.download;
-            this.pbAccount.Location = new System.Drawing.Point(269, 33);
-            this.pbAccount.Name = "pbAccount";
-            this.pbAccount.Size = new System.Drawing.Size(218, 211);
-            this.pbAccount.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAccount.TabIndex = 0;
-            this.pbAccount.TabStop = false;
             // 
             // lblReports
             // 
             this.lblReports.AutoSize = true;
             this.lblReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReports.Location = new System.Drawing.Point(327, 272);
+            this.lblReports.Location = new System.Drawing.Point(490, 425);
+            this.lblReports.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblReports.Name = "lblReports";
-            this.lblReports.Size = new System.Drawing.Size(103, 20);
+            this.lblReports.Size = new System.Drawing.Size(174, 32);
             this.lblReports.TabIndex = 1;
             this.lblReports.Text = "0 REPORTS";
             // 
@@ -63,50 +55,77 @@ namespace StudentHousingBV
             this.pnlProfile.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.pnlProfile.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlProfile.Controls.Add(this.lblTitle);
-            this.pnlProfile.Location = new System.Drawing.Point(12, 12);
+            this.pnlProfile.Location = new System.Drawing.Point(18, 19);
+            this.pnlProfile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlProfile.Name = "pnlProfile";
-            this.pnlProfile.Size = new System.Drawing.Size(130, 51);
+            this.pnlProfile.Size = new System.Drawing.Size(193, 77);
             this.pnlProfile.TabIndex = 3;
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(3, 0);
+            this.lblTitle.Location = new System.Drawing.Point(4, 0);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(113, 32);
+            this.lblTitle.Size = new System.Drawing.Size(167, 52);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Profile:";
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(312, 305);
+            this.btnLogOut.Location = new System.Drawing.Point(468, 477);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(140, 49);
+            this.btnLogOut.Size = new System.Drawing.Size(210, 77);
             this.btnLogOut.TabIndex = 4;
             this.btnLogOut.Text = "LOG OUT";
             this.btnLogOut.UseVisualStyleBackColor = true;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
+            // pbAccount
+            // 
+            this.pbAccount.Image = global::StudentHousingBV.Properties.Resources.download;
+            this.pbAccount.Location = new System.Drawing.Point(404, 52);
+            this.pbAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbAccount.Name = "pbAccount";
+            this.pbAccount.Size = new System.Drawing.Size(327, 330);
+            this.pbAccount.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAccount.TabIndex = 0;
+            this.pbAccount.TabStop = false;
+            // 
+            // btnChangePassword
+            // 
+            this.btnChangePassword.Location = new System.Drawing.Point(468, 581);
+            this.btnChangePassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnChangePassword.Name = "btnChangePassword";
+            this.btnChangePassword.Size = new System.Drawing.Size(210, 77);
+            this.btnChangePassword.TabIndex = 4;
+            this.btnChangePassword.Text = "CHANGE PASSWORD";
+            this.btnChangePassword.UseVisualStyleBackColor = true;
+            this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
+            // 
             // TenantAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 703);
+            this.Controls.Add(this.btnChangePassword);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.pnlProfile);
             this.Controls.Add(this.lblReports);
             this.Controls.Add(this.pbAccount);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TenantAccount";
             this.Text = "TenantAccount";
             this.Load += new System.EventHandler(this.TenantAccount_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbAccount)).EndInit();
             this.pnlProfile.ResumeLayout(false);
             this.pnlProfile.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAccount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,5 +138,6 @@ namespace StudentHousingBV
         private System.Windows.Forms.FlowLayoutPanel pnlProfile;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnLogOut;
+        private System.Windows.Forms.Button btnChangePassword;
     }
 }

@@ -45,14 +45,14 @@ namespace StudentHousingBV
             this.label4 = new System.Windows.Forms.Label();
             this.lblAccount = new System.Windows.Forms.Label();
             this.pbAccountSettings = new System.Windows.Forms.PictureBox();
-            this.lbNewComplaints = new System.Windows.Forms.ListBox();
-            this.lblNewComplaints = new System.Windows.Forms.Label();
-            this.lblLatestAnnouncements = new System.Windows.Forms.Label();
-            this.lbLatestAnnouncements = new System.Windows.Forms.ListBox();
-            this.btnViewNewComplaint = new System.Windows.Forms.Button();
-            this.btnViewLatestAnnouncement = new System.Windows.Forms.Button();
+            this.pnlInfo = new System.Windows.Forms.Panel();
+            this.lblInfo = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pbImage = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAccountSettings)).BeginInit();
+            this.pnlInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
             // lblWelcome
@@ -225,7 +225,7 @@ namespace StudentHousingBV
             this.lblAccount.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.lblAccount.Location = new System.Drawing.Point(1071, 510);
+            this.lblAccount.Location = new System.Drawing.Point(1100, 572);
             this.lblAccount.Name = "lblAccount";
             this.lblAccount.Size = new System.Drawing.Size(120, 25);
             this.lblAccount.TabIndex = 12;
@@ -236,8 +236,8 @@ namespace StudentHousingBV
             // 
             this.pbAccountSettings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbAccountSettings.Image = ((System.Drawing.Image)(resources.GetObject("pbAccountSettings.Image")));
-            this.pbAccountSettings.Location = new System.Drawing.Point(1041, 511);
-            this.pbAccountSettings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbAccountSettings.Location = new System.Drawing.Point(1070, 573);
+            this.pbAccountSettings.Margin = new System.Windows.Forms.Padding(2);
             this.pbAccountSettings.Name = "pbAccountSettings";
             this.pbAccountSettings.Size = new System.Drawing.Size(25, 24);
             this.pbAccountSettings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -245,77 +245,43 @@ namespace StudentHousingBV
             this.pbAccountSettings.TabStop = false;
             this.pbAccountSettings.Click += new System.EventHandler(this.pbAccountSettings_Click);
             // 
-            // lbNewComplaints
+            // pnlInfo
             // 
-            this.lbNewComplaints.FormattingEnabled = true;
-            this.lbNewComplaints.ItemHeight = 16;
-            this.lbNewComplaints.Items.AddRange(new object[] {
-            "click on me",
-            "test"});
-            this.lbNewComplaints.Location = new System.Drawing.Point(227, 197);
-            this.lbNewComplaints.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lbNewComplaints.Name = "lbNewComplaints";
-            this.lbNewComplaints.Size = new System.Drawing.Size(263, 260);
-            this.lbNewComplaints.TabIndex = 14;
-            this.lbNewComplaints.SelectedIndexChanged += new System.EventHandler(this.lbNewComplaints_SelectedIndexChanged);
+            this.pnlInfo.Controls.Add(this.label1);
+            this.pnlInfo.Location = new System.Drawing.Point(176, 166);
+            this.pnlInfo.Name = "pnlInfo";
+            this.pnlInfo.Size = new System.Drawing.Size(358, 218);
+            this.pnlInfo.TabIndex = 14;
             // 
-            // lblNewComplaints
+            // lblInfo
             // 
-            this.lblNewComplaints.AutoSize = true;
-            this.lblNewComplaints.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.lblNewComplaints.Location = new System.Drawing.Point(223, 166);
-            this.lblNewComplaints.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblNewComplaints.Name = "lblNewComplaints";
-            this.lblNewComplaints.Size = new System.Drawing.Size(151, 20);
-            this.lblNewComplaints.TabIndex = 15;
-            this.lblNewComplaints.Text = "New Complaints:";
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Location = new System.Drawing.Point(173, 157);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(40, 17);
+            this.lblInfo.TabIndex = 15;
+            this.lblInfo.Text = "INFO";
             // 
-            // lblLatestAnnouncements
+            // label1
             // 
-            this.lblLatestAnnouncements.AutoSize = true;
-            this.lblLatestAnnouncements.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.lblLatestAnnouncements.Location = new System.Drawing.Point(714, 166);
-            this.lblLatestAnnouncements.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblLatestAnnouncements.Name = "lblLatestAnnouncements";
-            this.lblLatestAnnouncements.Size = new System.Drawing.Size(207, 20);
-            this.lblLatestAnnouncements.TabIndex = 17;
-            this.lblLatestAnnouncements.Text = "Latest Announcements:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(3, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(352, 125);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "You are logged is an admin of\r\nStudentHousingBV. You can view\r\ncomplaints, update" +
+    " the announcements\r\nand rules, add and remove tenants and\r\nassign tasks to our t" +
+    "enants! \r\n";
             // 
-            // lbLatestAnnouncements
+            // pbImage
             // 
-            this.lbLatestAnnouncements.FormattingEnabled = true;
-            this.lbLatestAnnouncements.ItemHeight = 16;
-            this.lbLatestAnnouncements.Items.AddRange(new object[] {
-            "test",
-            "click on me"});
-            this.lbLatestAnnouncements.Location = new System.Drawing.Point(718, 197);
-            this.lbLatestAnnouncements.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lbLatestAnnouncements.Name = "lbLatestAnnouncements";
-            this.lbLatestAnnouncements.Size = new System.Drawing.Size(263, 260);
-            this.lbLatestAnnouncements.TabIndex = 16;
-            this.lbLatestAnnouncements.SelectedIndexChanged += new System.EventHandler(this.lbLatestAnnouncements_SelectedIndexChanged);
-            // 
-            // btnViewNewComplaint
-            // 
-            this.btnViewNewComplaint.Location = new System.Drawing.Point(502, 197);
-            this.btnViewNewComplaint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnViewNewComplaint.Name = "btnViewNewComplaint";
-            this.btnViewNewComplaint.Size = new System.Drawing.Size(148, 30);
-            this.btnViewNewComplaint.TabIndex = 18;
-            this.btnViewNewComplaint.Text = "View Complaint";
-            this.btnViewNewComplaint.UseVisualStyleBackColor = true;
-            this.btnViewNewComplaint.Visible = false;
-            // 
-            // btnViewLatestAnnouncement
-            // 
-            this.btnViewLatestAnnouncement.Location = new System.Drawing.Point(993, 197);
-            this.btnViewLatestAnnouncement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnViewLatestAnnouncement.Name = "btnViewLatestAnnouncement";
-            this.btnViewLatestAnnouncement.Size = new System.Drawing.Size(148, 30);
-            this.btnViewLatestAnnouncement.TabIndex = 18;
-            this.btnViewLatestAnnouncement.Text = "View Announcement";
-            this.btnViewLatestAnnouncement.UseVisualStyleBackColor = true;
-            this.btnViewLatestAnnouncement.Visible = false;
+            this.pbImage.Image = ((System.Drawing.Image)(resources.GetObject("pbImage.Image")));
+            this.pbImage.Location = new System.Drawing.Point(675, 166);
+            this.pbImage.Name = "pbImage";
+            this.pbImage.Size = new System.Drawing.Size(361, 228);
+            this.pbImage.TabIndex = 16;
+            this.pbImage.TabStop = false;
             // 
             // CompanyHome
             // 
@@ -323,21 +289,22 @@ namespace StudentHousingBV
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1222, 621);
-            this.Controls.Add(this.btnViewLatestAnnouncement);
-            this.Controls.Add(this.btnViewNewComplaint);
-            this.Controls.Add(this.lblLatestAnnouncements);
-            this.Controls.Add(this.lbLatestAnnouncements);
-            this.Controls.Add(this.lblNewComplaints);
-            this.Controls.Add(this.lbNewComplaints);
+            this.Controls.Add(this.pbImage);
+            this.Controls.Add(this.lblInfo);
+            this.Controls.Add(this.pnlInfo);
             this.Controls.Add(this.pbAccountSettings);
             this.Controls.Add(this.lblAccount);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.panel1);
             this.Name = "CompanyHome";
             this.Text = "CompanyHome";
+            this.Load += new System.EventHandler(this.CompanyHome_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAccountSettings)).EndInit();
+            this.pnlInfo.ResumeLayout(false);
+            this.pnlInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,11 +326,9 @@ namespace StudentHousingBV
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblAccount;
         private System.Windows.Forms.PictureBox pbAccountSettings;
-        private System.Windows.Forms.ListBox lbNewComplaints;
-        private System.Windows.Forms.Label lblNewComplaints;
-        private System.Windows.Forms.Label lblLatestAnnouncements;
-        private System.Windows.Forms.ListBox lbLatestAnnouncements;
-        private System.Windows.Forms.Button btnViewNewComplaint;
-        private System.Windows.Forms.Button btnViewLatestAnnouncement;
+        private System.Windows.Forms.Panel pnlInfo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblInfo;
+        private System.Windows.Forms.PictureBox pbImage;
     }
 }

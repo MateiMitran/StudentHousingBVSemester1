@@ -32,6 +32,7 @@ namespace StudentHousingBV
             this.pnlTasks = new System.Windows.Forms.FlowLayoutPanel();
             this.lblTasks = new System.Windows.Forms.Label();
             this.lbTasks = new System.Windows.Forms.ListBox();
+            this.btnFinished = new System.Windows.Forms.Button();
             this.pnlTasks.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,12 +65,23 @@ namespace StudentHousingBV
             this.lbTasks.Size = new System.Drawing.Size(394, 308);
             this.lbTasks.TabIndex = 2;
             // 
+            // btnFinished
+            // 
+            this.btnFinished.Location = new System.Drawing.Point(285, 27);
+            this.btnFinished.Name = "btnFinished";
+            this.btnFinished.Size = new System.Drawing.Size(124, 36);
+            this.btnFinished.TabIndex = 3;
+            this.btnFinished.Text = "Finished";
+            this.btnFinished.UseVisualStyleBackColor = true;
+            this.btnFinished.Click += new System.EventHandler(this.btnFinished_Click);
+            // 
             // TenantTasks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(489, 450);
+            this.Controls.Add(this.btnFinished);
             this.Controls.Add(this.lbTasks);
             this.Controls.Add(this.pnlTasks);
             this.Name = "TenantTasks";
@@ -86,5 +98,6 @@ namespace StudentHousingBV
         private System.Windows.Forms.FlowLayoutPanel pnlTasks;
         private System.Windows.Forms.Label lblTasks;
         private System.Windows.Forms.ListBox lbTasks;
+        private System.Windows.Forms.Button btnFinished;
     }
 }

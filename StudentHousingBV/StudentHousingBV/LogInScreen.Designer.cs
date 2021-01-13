@@ -41,10 +41,10 @@ namespace StudentHousingBV
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe Script", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(145, 20);
+            this.lblTitle.Font = new System.Drawing.Font("Mongolian Baiti", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(177, 26);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(529, 63);
+            this.lblTitle.Size = new System.Drawing.Size(469, 40);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "STUDENT HOUSING B.V.";
             // 
@@ -52,7 +52,7 @@ namespace StudentHousingBV
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblWelcome.Location = new System.Drawing.Point(325, 83);
+            this.lblWelcome.Location = new System.Drawing.Point(338, 66);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(155, 50);
             this.lblWelcome.TabIndex = 1;
@@ -81,7 +81,6 @@ namespace StudentHousingBV
             this.lblUserName.Size = new System.Drawing.Size(142, 29);
             this.lblUserName.TabIndex = 3;
             this.lblUserName.Text = "Username : ";
-            this.lblUserName.Click += new System.EventHandler(this.lblUserName_Click);
             // 
             // lblPassword
             // 
@@ -109,7 +108,6 @@ namespace StudentHousingBV
             this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(279, 27);
             this.tbPassword.TabIndex = 6;
-            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             // 
             // LogInScreen
             // 
@@ -131,7 +129,6 @@ namespace StudentHousingBV
             this.MinimizeBox = false;
             this.Name = "LogInScreen";
             this.Text = "Log In";
-            this.Load += new System.EventHandler(this.LogInScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

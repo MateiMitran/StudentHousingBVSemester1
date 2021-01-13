@@ -1,5 +1,4 @@
-﻿using StudentHousingBV.Tenants;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,22 +10,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StudentHousingBV
+namespace StudentHousingBV.Tenants
 {
-    public partial class CompanyAccount : Form
+    public partial class TenantChangePassword : Form
     {
-        public CompanyAccount()
+        public TenantChangePassword()
         {
             InitializeComponent();
-        }
-
-        private void btnLogOut_Click(object sender, EventArgs e)
-        {
-            LogInScreen login = new LogInScreen();
-            CompanyHome home = (CompanyHome)Application.OpenForms["CompanyHome"];
-            this.Close();
-            home.Close();
-            login.Show();
         }
 
         private void btnChangePassword_Click(object sender, EventArgs e)
@@ -35,13 +25,13 @@ namespace StudentHousingBV
             String newPassword = tbNewPassword.Text;
             String verifyNewPassword = tbVerifyNewPassword.Text;
 
-            // Get current admin
+            // Get current user
             LogInScreen login = (LogInScreen)Application.OpenForms["LogInScreen"];
-            Admin currentAdmin = login.getAdmin();
-            String currentAdminName = currentAdmin.getName();
-            String currentAdminPassword = currentAdmin.getPassword();
+            TenantClass currenTenant = login.getTenant();
+            String currentTenantName = currenTenant.getName();
+            String currentTenantPassword = currenTenant.getPassword();
 
-            if (currentPassword == currentAdminPassword)
+            if (currentPassword == currentTenantPassword)
             {
                 if (newPassword == verifyNewPassword)
                 {
@@ -61,14 +51,13 @@ namespace StudentHousingBV
                         String password = elements[1];
                         String role = elements[2];
 
-                        if (currentAdminName == username)
+                        if (currentTenantName == username)
                         {
                             String info = username + " " + newPassword + " " + role;
                             text += info + Environment.NewLine;
 
-                            currentAdmin.setPassword(newPassword);
-                        }
-                        else
+                            currenTenant.setPassword(newPassword);
+                        } else
                         {
                             text += line + Environment.NewLine;
                         }
@@ -85,11 +74,8 @@ namespace StudentHousingBV
 
                     // Close current form
                     MessageBox.Show("Password change successfully!");
-                    tbCurrentPassword.Text = "";
-                    tbNewPassword.Text = "";
-                    tbVerifyNewPassword.Text = "";
-                }
-                else
+                    this.Close();
+                } else
                 {
                     MessageBox.Show("Your new password and confirmation password do not match.");
 
@@ -97,8 +83,7 @@ namespace StudentHousingBV
                     tbNewPassword.Text = "";
                     tbVerifyNewPassword.Text = "";
                 }
-            }
-            else
+            } else
             {
                 MessageBox.Show("Current password is incorrect.");
 

@@ -1,7 +1,0 @@
-this is a test
-
-
-test
-<!-- END OF RULE -->
-hello world
-<!-- END OF RULE -->

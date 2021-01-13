@@ -12,6 +12,7 @@ namespace StudentHousingBV
 {
     public partial class TenantRules : Form
     {
+        private List<String> rules;
         public TenantRules()
         {
             InitializeComponent();
@@ -30,6 +31,14 @@ namespace StudentHousingBV
         private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void TenantRules_Load(object sender, EventArgs e)
+        {
+            LogInScreen login = (LogInScreen)Application.OpenForms["LogInScreen"];
+            rules = login.getRules();
+            for (int i = 0; i < rules.Count; i++)
+                this.lbRules.Items.Add(rules[i]);
         }
     }
 }

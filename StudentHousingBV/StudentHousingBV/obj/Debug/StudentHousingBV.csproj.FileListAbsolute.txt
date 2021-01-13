@@ -11,61 +11,6 @@ C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\Studen
 C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantHome.resources
 C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantComplaint.resources
 C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyHome.resources
-<<<<<<< HEAD
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe.config
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.pdb
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csprojAssemblyReference.cache
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyHome.resources
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAccount.resources
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAnnouncements.resources
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantHome.resources
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.LogInScreen.resources
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Properties.Resources.resources
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantComplaint.resources
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantRules.resources
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.GenerateResource.cache
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.CoreCompileInputs.cache
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.exe
-C:\Users\alexb\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.pdb
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe.config
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.pdb
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csprojAssemblyReference.cache
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyHome.resources
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAccount.resources
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAnnouncements.resources
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantHome.resources
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.LogInScreen.resources
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Properties.Resources.resources
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantComplaint.resources
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantRules.resources
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.GenerateResource.cache
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.CoreCompileInputs.cache
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.exe
-C:\Users\alexb\Desktop\Student Housing BV\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.pdb
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe.config
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.pdb
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csprojAssemblyReference.cache
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyHome.resources
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAccount.resources
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAnnouncements.resources
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantHome.resources
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.LogInScreen.resources
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Properties.Resources.resources
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantComplaint.resources
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantRules.resources
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.GenerateResource.cache
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.CoreCompileInputs.cache
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.exe
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.pdb
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyRules.resources
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAnnouncements.resources
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyComplaints.resources
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAccount.resources
-C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Company.CompanyRulesAddNew.resources
-=======
 C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAccount.resources
 C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAnnouncements.resources
 C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantRules.resources
@@ -74,4 +19,86 @@ C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\Studen
 C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyRules.resources
 C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyTasks.resources
 C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyComplaints.resources
->>>>>>> 050065356f7fb8f97312c27e7bf3104eb20211cd
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe.config
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.pdb
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csprojAssemblyReference.cache
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAccount.resources
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyComplaints.resources
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyHome.resources
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyRules.resources
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyTasks.resources
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyTenants.resources
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAccount.resources
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAnnouncements.resources
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantHome.resources
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.LogInScreen.resources
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Properties.Resources.resources
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantComplaint.resources
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantRules.resources
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantTasks.resources
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.GenerateResource.cache
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.CoreCompileInputs.cache
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.exe
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.pdb
+C:\Users\Ionut Popa\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Tenant.TenantEsentials.resources
+C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAnnouncements.resources
+C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyTenants.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.csprojAssemblyReference.cache
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAccount.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAnnouncements.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyComplaints.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyHome.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyRules.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyTasks.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyTenants.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAccount.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAnnouncements.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.TenantHome.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.LogInScreen.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.Properties.Resources.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.TenantComplaint.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.TenantRules.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.TenantTasks.resources
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.GenerateResource.cache
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.CoreCompileInputs.cache
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.exe
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.pdb
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\bin\Debug\StudentHousingBV.exe.config
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\bin\Debug\StudentHousingBV.exe
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\bin\Debug\StudentHousingBV.pdb
+C:\Users\Matei Mitran\Desktop\ThisIsTheCorrect\StudentHousingBV\obj\Debug\StudentHousingBV.TenantEsentials.resources
+C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantEsentials.resources
+C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAddAnnouncements.resources
+C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyUpdateAnnouncement.resources
+C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAddRule.resources
+C:\Users\Matei Mitran\Desktop\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyUpdateRule.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe.config
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.pdb
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csprojAssemblyReference.cache
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAddRule.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyUpdateRule.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyUpdateAnnouncement.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAccount.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAddAnnouncements.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyAnnouncements.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyComplaints.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyHome.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyRules.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyTasks.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.CompanyTenants.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantEsentials.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAccount.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantAnnouncements.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantHome.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.LogInScreen.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Properties.Resources.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantComplaint.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantRules.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.TenantTasks.resources
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.GenerateResource.cache
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.CoreCompileInputs.cache
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.exe
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.pdb
+C:\Users\alexb\Desktop\p-cb-s05-group-1\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Tenants.TenantChangePassword.resources

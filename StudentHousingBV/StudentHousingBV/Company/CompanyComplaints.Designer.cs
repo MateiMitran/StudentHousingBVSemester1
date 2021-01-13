@@ -34,7 +34,6 @@ namespace StudentHousingBV
             this.lblTenants = new System.Windows.Forms.Label();
             this.lbComplaints = new System.Windows.Forms.ListBox();
             this.btnShowComplaints = new System.Windows.Forms.Button();
-            this.btnRemoveComplaint = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -86,22 +85,11 @@ namespace StudentHousingBV
             this.btnShowComplaints.UseVisualStyleBackColor = true;
             this.btnShowComplaints.Click += new System.EventHandler(this.btnShowComplaints_Click);
             // 
-            // btnRemoveComplaint
-            // 
-            this.btnRemoveComplaint.Location = new System.Drawing.Point(6, 341);
-            this.btnRemoveComplaint.Name = "btnRemoveComplaint";
-            this.btnRemoveComplaint.Size = new System.Drawing.Size(214, 36);
-            this.btnRemoveComplaint.TabIndex = 9;
-            this.btnRemoveComplaint.Text = "Remove Complaint";
-            this.btnRemoveComplaint.UseVisualStyleBackColor = true;
-            this.btnRemoveComplaint.Click += new System.EventHandler(this.btnRemoveComplaint_Click);
-            // 
             // CompanyComplaints
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(723, 511);
-            this.Controls.Add(this.btnRemoveComplaint);
             this.Controls.Add(this.btnShowComplaints);
             this.Controls.Add(this.lbComplaints);
             this.Controls.Add(this.lblTenants);
@@ -123,6 +111,5 @@ namespace StudentHousingBV
         private System.Windows.Forms.Label lblTenants;
         private System.Windows.Forms.ListBox lbComplaints;
         private System.Windows.Forms.Button btnShowComplaints;
-        private System.Windows.Forms.Button btnRemoveComplaint;
     }
 }

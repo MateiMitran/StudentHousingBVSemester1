@@ -62,15 +62,20 @@ namespace StudentHousingBV
 
         private void lbNewComplaints_SelectedIndexChanged(object sender, EventArgs e)
         {
-            btnViewNewComplaint.Visible = true;
+            
         }
 
         private void lbLatestAnnouncements_SelectedIndexChanged(object sender, EventArgs e)
         {
-            btnViewLatestAnnouncement.Visible = true;
+           
         }
 
         private void CompanyHome_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CompanyHome_Load_1(object sender, EventArgs e)
         {
 
         }
