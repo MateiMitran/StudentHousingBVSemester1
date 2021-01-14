@@ -52,7 +52,6 @@ namespace StudentHousingBV
         {
             TenantComplaint complaint = new TenantComplaint();
             complaint.Show();
-
         }
 
         private void lblAnnouncements_Click(object sender, EventArgs e)

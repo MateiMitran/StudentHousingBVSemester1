@@ -34,6 +34,10 @@ namespace StudentHousingBV
         public void initializeTenants()
         {
             tenants.Clear();
+            admins.Clear();
+            currentTenant = null;
+            currentAdmin = null;
+
             String line;
 
             // Read users.txt and get all tenants
