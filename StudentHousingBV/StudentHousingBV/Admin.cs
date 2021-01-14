@@ -8,7 +8,7 @@ namespace StudentHousingBV
 {
     public class Admin
     {
-        public String username;
+        private String username;
         private String password;
 
         public Admin(String adminUsername, String adminPassword)

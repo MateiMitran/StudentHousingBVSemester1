@@ -36,12 +36,15 @@ namespace StudentHousingBV
         private void ClientHome_Load(object sender, EventArgs e)
         {
             LogInScreen login = (LogInScreen)Application.OpenForms["LogInScreen"];
+
             allTenants = login.getTenants();
-            for (int i=0;i<allTenants.Count;i++)
+
+            for (int i = 0; i < allTenants.Count; i++)
             {
                 if (allTenants[i].isStudentOfTheMonth() == true)
+                {
                     this.lblSoTM.Text = allTenants[i].getName();
-
+                }
             }
 
             currentTenant = login.getTenant();
@@ -68,7 +71,6 @@ namespace StudentHousingBV
 
         private void lblLogOut_Click(object sender, EventArgs e)
         {
-            
             TenantTasks tasks = new TenantTasks();
             tasks.Show();
         }
