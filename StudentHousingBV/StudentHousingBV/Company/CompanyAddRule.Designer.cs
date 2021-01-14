@@ -74,7 +74,6 @@ namespace StudentHousingBV
             this.Controls.Add(this.lblTitle);
             this.Name = "CompanyAddRule";
             this.Text = "CompanyAddRule";
-            this.Load += new System.EventHandler(this.CompanyAddRule_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

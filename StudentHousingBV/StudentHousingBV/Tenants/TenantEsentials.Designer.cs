@@ -83,7 +83,6 @@
             this.HouseBanklbl.Size = new System.Drawing.Size(32, 36);
             this.HouseBanklbl.TabIndex = 3;
             this.HouseBanklbl.Text = "0";
-            this.HouseBanklbl.Click += new System.EventHandler(this.label2_Click);
             // 
             // addbtn
             // 

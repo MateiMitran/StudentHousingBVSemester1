@@ -53,22 +53,26 @@ namespace StudentHousingBV
                 lines.Add(Regex.Replace(this.textBox1.Text, @"\s+", "") + " password " + "user");
                 File.WriteAllLines(path, lines);
                 this.comboBox1.Items.Add(x.getName());
-                MessageBox.Show("Tenant added successfuly!");
-            }
-            else
-                MessageBox.Show("Please enter a tenant name to add!");
-            
 
+                MessageBox.Show("Tenant added successfuly!");
+            } else
+            {
+                MessageBox.Show("Please enter a tenant name to add!");
+            }
         }
 
         private void btnMakeSoTM_Click(object sender, EventArgs e)
         {
-            for (int i=0;i<allTenants.Count;i++)
+            for (int i= 0 ;i < allTenants.Count; i++)
             {
                 if (allTenants[i].getName() == Convert.ToString(this.comboBox1.SelectedItem))
+                {
                     allTenants[i].makeStudentOfTheMonth();
-                else
+                    MessageBox.Show("Successfully updated tenant of the month!");
+                } else
+                {
                     allTenants[i].removeStudentOfTheMonth();
+                }
             }
         }
     }

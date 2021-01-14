@@ -66,7 +66,6 @@ namespace StudentHousingBV
             this.lblTitle.Size = new System.Drawing.Size(102, 32);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Rules:";
-            this.lblTitle.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbRules
             // 

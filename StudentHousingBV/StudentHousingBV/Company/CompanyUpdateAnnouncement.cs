@@ -21,30 +21,22 @@ namespace StudentHousingBV
             CompanyAnnouncements form = (CompanyAnnouncements)Application.OpenForms["CompanyAnnouncements"];
             announcements = form.getAnnouncements();
             Index = index;
-
-        }
-
-        private void lblTitle_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            for (int i=0;i<announcements.Count;i++)
+            for (int i = 0; i < announcements.Count; i++)
             {
                 if (i == Index)
+                {
                     announcements[i] = this.tbUpdate.Text;
+                }
             }
+
             CompanyAnnouncements form = (CompanyAnnouncements)Application.OpenForms["CompanyAnnouncements"];
             form.updateListBox();
+
             MessageBox.Show("Announcement updated successfuly!");
-
-        }
-
-        private void CompanyUpdateAnnouncement_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

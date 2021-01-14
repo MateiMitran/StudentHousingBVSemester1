@@ -18,15 +18,11 @@ namespace StudentHousingBV
         int s;
         int nrOfTenants;
         int goal;
+
         public TenantEsentials()
         {
             InitializeComponent();
             this.addbtn.BackColor = Color.Gainsboro;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void TenantEsentials_Load(object sender, EventArgs e)
@@ -34,10 +30,13 @@ namespace StudentHousingBV
             LogInScreen login = (LogInScreen)Application.OpenForms["LogInScreen"];
             allTenants = login.getTenants();
             nrOfTenants = allTenants.Count();
+
             this.goallbl.Text = Convert.ToString(nrOfTenants * 2);
             String currentTenantName = login.getTenantName();
+
             this.HouseBanklbl.Text = Convert.ToString(s);
             goal = nrOfTenants * 2;
+
             for (int i = 0; i < allTenants.Count; i++)
             {
                 nrOfTenants = allTenants.Count;
@@ -49,7 +48,6 @@ namespace StudentHousingBV
 
                     if (currentTenant.voted == true)
                     {
-
                         this.HouseBanklbl.Text = Convert.ToString(s);
                         this.addbtn.Enabled = false;
                         this.addbtn.BackColor = Color.Gray;
@@ -60,11 +58,8 @@ namespace StudentHousingBV
                         {
                             this.enoughGatheredlbl.Text = "The sum for this month has been gathered";
                         }
-
                     }
-
                 }
-
             }
         }
 

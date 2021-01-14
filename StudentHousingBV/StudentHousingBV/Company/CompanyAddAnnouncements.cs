@@ -17,16 +17,6 @@ namespace StudentHousingBV
             InitializeComponent();
         }
 
-        private void CompanyAddAnnouncements_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (this.tbAdd.TextLength > 0)
@@ -38,8 +28,9 @@ namespace StudentHousingBV
                 announcements.updateListBox();
             }
             else
+            {
                 MessageBox.Show("Please fill in an announcement to add!");
-            
+            }
         }
     }
 }

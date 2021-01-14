@@ -30,6 +30,7 @@ namespace StudentHousingBV
             initializeAnnouncements();
             initializeRules();
         }
+
         public void initializeTenants()
         {
             tenants.Clear();

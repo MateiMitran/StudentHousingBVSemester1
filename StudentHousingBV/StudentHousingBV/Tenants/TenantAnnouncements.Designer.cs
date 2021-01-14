@@ -87,7 +87,6 @@ namespace StudentHousingBV
             this.lbAnnouncements.Name = "lbAnnouncements";
             this.lbAnnouncements.Size = new System.Drawing.Size(422, 204);
             this.lbAnnouncements.TabIndex = 7;
-            this.lbAnnouncements.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -159,7 +158,6 @@ namespace StudentHousingBV
             this.lblNrOfTenants.Size = new System.Drawing.Size(18, 20);
             this.lblNrOfTenants.TabIndex = 15;
             this.lblNrOfTenants.Text = "0";
-            this.lblNrOfTenants.Click += new System.EventHandler(this.label6_Click_1);
             // 
             // opinionlbl
             // 

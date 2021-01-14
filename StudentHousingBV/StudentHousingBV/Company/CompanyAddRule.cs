@@ -17,11 +17,6 @@ namespace StudentHousingBV
             InitializeComponent();
         }
 
-        private void CompanyAddRule_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (this.tbAdd.TextLength > 0)
@@ -33,7 +28,9 @@ namespace StudentHousingBV
                 rules.updateListBox();
             }
             else
+            {
                 MessageBox.Show("Please fill in a rule to add!");
+            }
         }
     }
 }

@@ -18,27 +18,15 @@ namespace StudentHousingBV
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void TenantRules_Load(object sender, EventArgs e)
         {
             LogInScreen login = (LogInScreen)Application.OpenForms["LogInScreen"];
             rules = login.getRules();
+
             for (int i = 0; i < rules.Count; i++)
+            {
                 this.lbRules.Items.Add(rules[i]);
+            }
         }
     }
 }

@@ -53,7 +53,6 @@ namespace StudentHousingBV
             this.panelComplaints.Name = "panelComplaints";
             this.panelComplaints.Size = new System.Drawing.Size(195, 51);
             this.panelComplaints.TabIndex = 0;
-            this.panelComplaints.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // lblComplaints
             // 

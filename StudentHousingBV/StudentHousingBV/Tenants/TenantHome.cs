@@ -14,6 +14,7 @@ namespace StudentHousingBV
     {
         private TenantClass currentTenant;
         private List<TenantClass> allTenants;
+
         public TenantHome()
         {
             InitializeComponent();

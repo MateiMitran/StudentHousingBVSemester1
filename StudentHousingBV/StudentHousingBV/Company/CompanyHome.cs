@@ -37,7 +37,6 @@ namespace StudentHousingBV
 
         private void lblLogOut_Click(object sender, EventArgs e)
         {
-            
             CompanyTasks tasks = new CompanyTasks();
             tasks.Show();
         }
@@ -58,26 +57,6 @@ namespace StudentHousingBV
         {
             CompanyAccount account = new CompanyAccount();
             account.Show();
-        }
-
-        private void lbNewComplaints_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void lbLatestAnnouncements_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void CompanyHome_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CompanyHome_Load_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

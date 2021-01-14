@@ -53,7 +53,6 @@ namespace StudentHousingBV
             this.tbAdd.Name = "tbAdd";
             this.tbAdd.Size = new System.Drawing.Size(307, 22);
             this.tbAdd.TabIndex = 6;
-            this.tbAdd.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnAdd
             // 
@@ -75,7 +74,6 @@ namespace StudentHousingBV
             this.Controls.Add(this.lblTitle);
             this.Name = "CompanyAddAnnouncementsOrRules";
             this.Text = "CompanyAddAnnouncements";
-            this.Load += new System.EventHandler(this.CompanyAddAnnouncements_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

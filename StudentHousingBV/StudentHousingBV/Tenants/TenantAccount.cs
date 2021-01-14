@@ -22,8 +22,7 @@ namespace StudentHousingBV
         public TenantAccount()
         {
             InitializeComponent();
-            this.ammount = new Banks(10); //Here it should be that a user has a starting ammount in the account
-            
+            this.ammount = new Banks(10); // Here it should be that a user has a starting ammount in the accounts   
         }
 
         private void TenantAccount_Load(object sender, EventArgs e)
@@ -31,11 +30,9 @@ namespace StudentHousingBV
             TenantHome home = (TenantHome)Application.OpenForms["TenantHome"];
             LogInScreen login = (LogInScreen)Application.OpenForms["LogInScreen"];
 
-
             currentTenant = home.getTenant();
             this.lblReports.Text = currentTenant.getReports() + " reports.";
 
-           
             for (int i = 0; i < account.Count(); i++ )
             {
                 String Ammount = Convert.ToString(this.ammount);

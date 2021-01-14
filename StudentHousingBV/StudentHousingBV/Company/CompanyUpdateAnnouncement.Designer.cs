@@ -46,7 +46,6 @@ namespace StudentHousingBV
             this.lblTitle.TabIndex = 5;
             this.lblTitle.Text = "Update";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
             // tbUpdate
             // 
@@ -75,7 +74,6 @@ namespace StudentHousingBV
             this.Controls.Add(this.lblTitle);
             this.Name = "CompanyUpdateAnnouncement";
             this.Text = "CompanyUpdateAnnouncement";
-            this.Load += new System.EventHandler(this.CompanyUpdateAnnouncement_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

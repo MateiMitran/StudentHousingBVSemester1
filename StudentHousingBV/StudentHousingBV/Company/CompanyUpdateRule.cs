@@ -14,6 +14,7 @@ namespace StudentHousingBV
     {
         private List<String> rules;
         private int Index;
+
         public CompanyUpdateRule(String rule, int index)
         {
             InitializeComponent();
@@ -23,20 +24,19 @@ namespace StudentHousingBV
             Index = index;
         }
 
-        private void CompanyUpdateRule_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < rules.Count; i++)
             {
                 if (i == Index)
+                {
                     rules[i] = this.tbUpdate.Text;
+                }
             }
+
             CompanyRules form = (CompanyRules)Application.OpenForms["CompanyRules"];
             form.updateListBox();
+
             MessageBox.Show("Rule updated successfuly!");
         }
     }

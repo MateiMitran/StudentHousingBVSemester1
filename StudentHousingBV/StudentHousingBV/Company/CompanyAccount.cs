@@ -24,8 +24,11 @@ namespace StudentHousingBV
         {
             LogInScreen login = new LogInScreen();
             CompanyHome home = (CompanyHome)Application.OpenForms["CompanyHome"];
+            CompanyAccount account = (CompanyAccount)Application.OpenForms["CompanyAccount"];
+
             this.Close();
             home.Close();
+            account.Close();
             login.Show();
         }
 

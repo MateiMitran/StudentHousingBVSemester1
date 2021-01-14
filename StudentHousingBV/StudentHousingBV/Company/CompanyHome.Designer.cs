@@ -298,7 +298,6 @@ namespace StudentHousingBV
             this.Controls.Add(this.panel1);
             this.Name = "CompanyHome";
             this.Text = "CompanyHome";
-            this.Load += new System.EventHandler(this.CompanyHome_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAccountSettings)).EndInit();

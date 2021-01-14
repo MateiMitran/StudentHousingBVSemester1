@@ -12,14 +12,12 @@ namespace StudentHousingBV
         public String name;
         private int balance;
 
-
         public Banks(String name,int balance)
         {
             this.name = name;
             this.balance = balance;
             
         }
-
 
         public Banks(int balance)
         {
@@ -34,8 +32,6 @@ namespace StudentHousingBV
         {
             //Tenant Name = this.getName();
             this.name = t.getName();
-            
-           
         }
 
         public String getBankOwner()
@@ -65,7 +61,6 @@ namespace StudentHousingBV
             holder = this.name + "-" + this.balance;
 
             return holder;
-
         }
     }
 }
