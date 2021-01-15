@@ -49,18 +49,20 @@ namespace StudentHousingBV
             this.panelComplaints.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panelComplaints.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelComplaints.Controls.Add(this.lblComplaints);
-            this.panelComplaints.Location = new System.Drawing.Point(22, 12);
+            this.panelComplaints.Location = new System.Drawing.Point(33, 19);
+            this.panelComplaints.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelComplaints.Name = "panelComplaints";
-            this.panelComplaints.Size = new System.Drawing.Size(195, 51);
+            this.panelComplaints.Size = new System.Drawing.Size(290, 77);
             this.panelComplaints.TabIndex = 0;
             // 
             // lblComplaints
             // 
             this.lblComplaints.AutoSize = true;
             this.lblComplaints.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComplaints.Location = new System.Drawing.Point(3, 0);
+            this.lblComplaints.Location = new System.Drawing.Point(4, 0);
+            this.lblComplaints.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblComplaints.Name = "lblComplaints";
-            this.lblComplaints.Size = new System.Drawing.Size(177, 32);
+            this.lblComplaints.Size = new System.Drawing.Size(265, 52);
             this.lblComplaints.TabIndex = 0;
             this.lblComplaints.Text = "Complaints:";
             // 
@@ -68,9 +70,10 @@ namespace StudentHousingBV
             // 
             this.lblChoose.AutoSize = true;
             this.lblChoose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChoose.Location = new System.Drawing.Point(17, 111);
+            this.lblChoose.Location = new System.Drawing.Point(26, 173);
+            this.lblChoose.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblChoose.Name = "lblChoose";
-            this.lblChoose.Size = new System.Drawing.Size(324, 25);
+            this.lblChoose.Size = new System.Drawing.Size(508, 37);
             this.lblChoose.TabIndex = 0;
             this.lblChoose.Text = "Choose what has bothered you: ";
             // 
@@ -78,44 +81,49 @@ namespace StudentHousingBV
             // 
             this.lblCustom.AutoSize = true;
             this.lblCustom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustom.Location = new System.Drawing.Point(428, 111);
+            this.lblCustom.Location = new System.Drawing.Point(642, 173);
+            this.lblCustom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCustom.Name = "lblCustom";
-            this.lblCustom.Size = new System.Drawing.Size(435, 25);
+            this.lblCustom.Size = new System.Drawing.Size(687, 37);
             this.lblCustom.TabIndex = 0;
             this.lblCustom.Text = "Something out of the ordinary? Let us know:";
             // 
             // tbCustom
             // 
-            this.tbCustom.Location = new System.Drawing.Point(433, 154);
+            this.tbCustom.Location = new System.Drawing.Point(650, 241);
+            this.tbCustom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbCustom.Multiline = true;
             this.tbCustom.Name = "tbCustom";
-            this.tbCustom.Size = new System.Drawing.Size(431, 200);
+            this.tbCustom.Size = new System.Drawing.Size(644, 310);
             this.tbCustom.TabIndex = 5;
             // 
             // cbxTenants
             // 
             this.cbxTenants.FormattingEnabled = true;
-            this.cbxTenants.Location = new System.Drawing.Point(433, 60);
+            this.cbxTenants.Location = new System.Drawing.Point(650, 94);
+            this.cbxTenants.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxTenants.Name = "cbxTenants";
-            this.cbxTenants.Size = new System.Drawing.Size(258, 24);
+            this.cbxTenants.Size = new System.Drawing.Size(408, 33);
             this.cbxTenants.TabIndex = 6;
             // 
             // lblChooseATenant
             // 
             this.lblChooseATenant.AutoSize = true;
             this.lblChooseATenant.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblChooseATenant.Location = new System.Drawing.Point(428, 32);
+            this.lblChooseATenant.Location = new System.Drawing.Point(642, 50);
+            this.lblChooseATenant.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblChooseATenant.Name = "lblChooseATenant";
-            this.lblChooseATenant.Size = new System.Drawing.Size(178, 25);
+            this.lblChooseATenant.Size = new System.Drawing.Size(416, 37);
             this.lblChooseATenant.TabIndex = 7;
-            this.lblChooseATenant.Text = "Choose a tenant!";
+            this.lblChooseATenant.Text = "Choose a tenant to report:";
             // 
             // btnFile
             // 
             this.btnFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnFile.Location = new System.Drawing.Point(433, 413);
+            this.btnFile.Location = new System.Drawing.Point(650, 645);
+            this.btnFile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnFile.Name = "btnFile";
-            this.btnFile.Size = new System.Drawing.Size(429, 73);
+            this.btnFile.Size = new System.Drawing.Size(644, 114);
             this.btnFile.TabIndex = 8;
             this.btnFile.Text = "File Complaint";
             this.btnFile.UseVisualStyleBackColor = true;
@@ -125,9 +133,10 @@ namespace StudentHousingBV
             // 
             this.rbTrash.AutoSize = true;
             this.rbTrash.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.rbTrash.Location = new System.Drawing.Point(22, 189);
+            this.rbTrash.Location = new System.Drawing.Point(33, 295);
+            this.rbTrash.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rbTrash.Name = "rbTrash";
-            this.rbTrash.Size = new System.Drawing.Size(183, 24);
+            this.rbTrash.Size = new System.Drawing.Size(305, 36);
             this.rbTrash.TabIndex = 9;
             this.rbTrash.TabStop = true;
             this.rbTrash.Text = "Trash not taken out?";
@@ -137,9 +146,10 @@ namespace StudentHousingBV
             // 
             this.rbDirty.AutoSize = true;
             this.rbDirty.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.rbDirty.Location = new System.Drawing.Point(22, 247);
+            this.rbDirty.Location = new System.Drawing.Point(33, 386);
+            this.rbDirty.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rbDirty.Name = "rbDirty";
-            this.rbDirty.Size = new System.Drawing.Size(168, 24);
+            this.rbDirty.Size = new System.Drawing.Size(277, 36);
             this.rbDirty.TabIndex = 10;
             this.rbDirty.TabStop = true;
             this.rbDirty.Text = "Dirty living space?";
@@ -149,9 +159,10 @@ namespace StudentHousingBV
             // 
             this.rbLoud.AutoSize = true;
             this.rbLoud.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.rbLoud.Location = new System.Drawing.Point(22, 303);
+            this.rbLoud.Location = new System.Drawing.Point(33, 473);
+            this.rbLoud.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rbLoud.Name = "rbLoud";
-            this.rbLoud.Size = new System.Drawing.Size(188, 24);
+            this.rbLoud.Size = new System.Drawing.Size(317, 36);
             this.rbLoud.TabIndex = 11;
             this.rbLoud.TabStop = true;
             this.rbLoud.Text = "Neighbours too loud?";
@@ -161,9 +172,10 @@ namespace StudentHousingBV
             // 
             this.rbUnlocked.AutoSize = true;
             this.rbUnlocked.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.rbUnlocked.Location = new System.Drawing.Point(22, 366);
+            this.rbUnlocked.Location = new System.Drawing.Point(33, 572);
+            this.rbUnlocked.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rbUnlocked.Name = "rbUnlocked";
-            this.rbUnlocked.Size = new System.Drawing.Size(230, 24);
+            this.rbUnlocked.Size = new System.Drawing.Size(389, 36);
             this.rbUnlocked.TabIndex = 12;
             this.rbUnlocked.TabStop = true;
             this.rbUnlocked.Text = "Main door found unlocked?";
@@ -171,10 +183,10 @@ namespace StudentHousingBV
             // 
             // TenantComplaint
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1015, 552);
+            this.ClientSize = new System.Drawing.Size(1522, 862);
             this.Controls.Add(this.rbUnlocked);
             this.Controls.Add(this.rbLoud);
             this.Controls.Add(this.rbDirty);
@@ -187,6 +199,7 @@ namespace StudentHousingBV
             this.Controls.Add(this.lblChoose);
             this.Controls.Add(this.panelComplaints);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TenantComplaint";

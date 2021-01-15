@@ -39,42 +39,50 @@ namespace StudentHousingBV
 
         private void btnFile_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < alltenants.Count(); i++)
-            {
-                if (alltenants[i].getName() == Convert.ToString(this.cbxTenants.SelectedItem))
-                {
-                    reportedTenant = alltenants[i];
-                }
-            }
+            String selectedTenant = Convert.ToString(this.cbxTenants.SelectedItem);
 
-            if (this.rbLoud.Checked)
+            if (selectedTenant.Trim() != "")
             {
-                reportedTenant.addComplaints("Noise");
-                MessageBox.Show("Complaint filed!");
-            }
-            else if (this.rbDirty.Checked)
+                for (int i = 0; i < alltenants.Count(); i++)
+                {
+                    if (alltenants[i].getName() == selectedTenant)
+                    {
+                        reportedTenant = alltenants[i];
+                    }
+                }
+
+                if (this.rbLoud.Checked)
+                {
+                    reportedTenant.addComplaints("Noise");
+                    MessageBox.Show("Complaint filed!");
+                }
+                else if (this.rbDirty.Checked)
+                {
+                    reportedTenant.addComplaints("Dirty");
+                    MessageBox.Show("Complaint filed!");
+                }
+                else if (this.rbTrash.Checked)
+                {
+                    reportedTenant.addComplaints("Trash");
+                    MessageBox.Show("Complaint filed!");
+                }
+                else if (this.rbUnlocked.Checked)
+                {
+                    reportedTenant.addComplaints("Unlocked");
+                    MessageBox.Show("Complaint filed!");
+                }
+                else if (this.tbCustom.TextLength > 0)
+                {
+                    reportedTenant.addComplaints(this.tbCustom.Text);
+                    MessageBox.Show("Complaint filed!");
+                }
+                else
+                {
+                    MessageBox.Show("No complaint selected!");
+                }
+            } else
             {
-                reportedTenant.addComplaints("Dirty");
-                MessageBox.Show("Complaint filed!");
-            }
-            else if (this.rbTrash.Checked)
-            {
-                reportedTenant.addComplaints("Trash");
-                MessageBox.Show("Complaint filed!");
-            }
-            else if (this.rbUnlocked.Checked)
-            {
-                reportedTenant.addComplaints("Unlocked");
-                MessageBox.Show("Complaint filed!");
-            }
-            else if (this.tbCustom.TextLength > 0)
-            {
-                reportedTenant.addComplaints(this.tbCustom.Text);
-                MessageBox.Show("Complaint filed!");
-            }
-            else
-            {
-                MessageBox.Show("No complaint selected!");
+                MessageBox.Show("Please select a tenant to report!");
             }
         }
     }
