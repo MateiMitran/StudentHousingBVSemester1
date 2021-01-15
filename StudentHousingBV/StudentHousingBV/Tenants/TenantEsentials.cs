@@ -15,7 +15,7 @@ namespace StudentHousingBV
         
         List<TenantClass> allTenants;
         TenantClass currentTenant;
-        int s;
+        public static int s;
         int nrOfTenants;
         int goal;
 
