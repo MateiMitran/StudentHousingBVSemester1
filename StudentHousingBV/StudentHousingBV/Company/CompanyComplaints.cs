@@ -41,8 +41,15 @@ namespace StudentHousingBV
                     currentTenant = allTenants[i];
                 }
             }
-            complaints = currentTenant.getComplaints();
-            UpdateListBox();
+
+            if (currentTenant != null)
+            {
+                complaints = currentTenant.getComplaints();
+                UpdateListBox();
+            } else
+            {
+                MessageBox.Show("Please select a tenant to view complaints");
+            }
         }
 
         public void UpdateListBox()
