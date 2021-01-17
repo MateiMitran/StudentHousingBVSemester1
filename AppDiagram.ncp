@@ -1,0 +1,568 @@
+<Project>
+  <Name>Untitled</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>TenantHome</Name>
+        <Access>Public</Access>
+        <Location left="3238" top="338" />
+        <Size width="380" height="298" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private TenantClass currentTenant</Member>
+        <Member type="Field">private List&lt;TenantClass&gt; allTenants</Member>
+        <Member type="Constructor">public TenantHome()</Member>
+        <Member type="Method">public int getReports()</Member>
+        <Member type="Method">public TenantClass getTenant()</Member>
+        <Member type="Method">public void AddComplaints(TenantClass reportedTenant, String complaint)</Member>
+        <Member type="Method">private void ClientHome_Load(object sender, EventArgs e)</Member>
+        <Member type="Method">private void label3_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void lblAnnouncements_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void lblAccount_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void lblLogOut_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void lblRules_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void lblEssentials_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TenantClass</Name>
+        <Access>Public</Access>
+        <Location left="2527" top="302" />
+        <Size width="373" height="570" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public int balance</Member>
+        <Member type="Field">public bool choose</Member>
+        <Member type="Field">public int moneyContributed</Member>
+        <Member type="Field">public int option</Member>
+        <Member type="Field">public int voteContributed</Member>
+        <Member type="Field">public bool voted</Member>
+        <Member type="Field">private List&lt;String&gt; complaints</Member>
+        <Member type="Field">private String name</Member>
+        <Member type="Field">private String password</Member>
+        <Member type="Field">private int reports</Member>
+        <Member type="Field">private bool studentOfTheMonth</Member>
+        <Member type="Field">private List&lt;String&gt; tasks</Member>
+        <Member type="Constructor">public TenantClass(String nameOfTenant, String tenantPassword)</Member>
+        <Member type="Method">public bool Contribution()</Member>
+        <Member type="Method">public bool Chose()</Member>
+        <Member type="Method">public void addMoney(int value)</Member>
+        <Member type="Method">public String getName()</Member>
+        <Member type="Method">public String getPassword()</Member>
+        <Member type="Method">public void setPassword(String newPassword)</Member>
+        <Member type="Method">public void addComplaints(String complaint)</Member>
+        <Member type="Method">public void removeComplaints(String complaint)</Member>
+        <Member type="Method">public void addTasks(String task)</Member>
+        <Member type="Method">public void removeTasks(String task)</Member>
+        <Member type="Method">public void makeStudentOfTheMonth()</Member>
+        <Member type="Method">public void removeStudentOfTheMonth()</Member>
+        <Member type="Method">public int getReports()</Member>
+        <Member type="Method">public List&lt;String&gt; getTasks()</Member>
+        <Member type="Method">public List&lt;String&gt; getComplaints()</Member>
+        <Member type="Method">public bool isStudentOfTheMonth()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Admin</Name>
+        <Access>Public</Access>
+        <Location left="491" top="567" />
+        <Size width="304" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String username</Member>
+        <Member type="Field">private String password</Member>
+        <Member type="Constructor">public Admin(String adminUsername, String adminPassword)</Member>
+        <Member type="Method">public String getName()</Member>
+        <Member type="Method">public void setPassword(String adminPassword)</Member>
+        <Member type="Method">public String getPassword()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Announcement</Name>
+        <Access>Public</Access>
+        <Location left="1690" top="892" />
+        <Size width="226" height="144" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String announcement</Member>
+        <Member type="Constructor">public Announcement(String Announcement)</Member>
+        <Member type="Method">public String getAnnouncement()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Rule</Name>
+        <Access>Public</Access>
+        <Location left="1711" top="588" />
+        <Size width="162" height="140" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String rule</Member>
+        <Member type="Constructor">public Rule(String Rule)</Member>
+        <Member type="Method">public String getRule()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Task</Name>
+        <Access>Public</Access>
+        <Location left="1711" top="334" />
+        <Size width="162" height="140" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String task</Member>
+        <Member type="Constructor">public Task(String Task)</Member>
+        <Member type="Method">public String getTask()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LogInScreen</Name>
+        <Access>Public</Access>
+        <Location left="1331" top="368" />
+        <Size width="334" height="485" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;TenantClass&gt; tenants</Member>
+        <Member type="Field">private List&lt;Admin&gt; admins</Member>
+        <Member type="Field">private List&lt;String&gt; announcements</Member>
+        <Member type="Field">private List&lt;String&gt; rules</Member>
+        <Member type="Field">private String tenantName</Member>
+        <Member type="Field">private String adminName</Member>
+        <Member type="Field">public static TenantClass currentTenant</Member>
+        <Member type="Field">public static Admin currentAdmin</Member>
+        <Member type="Constructor">public LogInScreen()</Member>
+        <Member type="Method">public void initializeTenants()</Member>
+        <Member type="Method">private void initializeAnnouncements()</Member>
+        <Member type="Method">private void initializeRules()</Member>
+        <Member type="Method">private void btnLogIn_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">public void updateRules(String rule)</Member>
+        <Member type="Method">public void removeRule(String rule)</Member>
+        <Member type="Method">public List&lt;String&gt; getRules()</Member>
+        <Member type="Method">public void updateAnnouncements(String announcement)</Member>
+        <Member type="Method">public void removeAnnouncement(String announcement)</Member>
+        <Member type="Method">public List&lt;String&gt; getAnnouncements()</Member>
+        <Member type="Method">public void addTenant(TenantClass x)</Member>
+        <Member type="Method">public String getTenantName()</Member>
+        <Member type="Method">private void btnLogIn_MouseHover(object sender, EventArgs e)</Member>
+        <Member type="Method">private void btnLogIn_MouseLeave(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TenaAccount</Name>
+        <Access>Public</Access>
+        <Location left="2915" top="979" />
+        <Size width="338" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">TenantClass currentTenant</Member>
+        <Member type="Constructor">public TenaAccount()</Member>
+        <Member type="Method">private void TenantAccount_Load(object sender, EventArgs e)</Member>
+        <Member type="Method">private void btnLogOut_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void btnChangePassword_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TenantChangePassword</Name>
+        <Access>Public</Access>
+        <Location left="3273" top="199" />
+        <Size width="338" height="123" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public TenantChangePassword()</Member>
+        <Member type="Method">private void btnChangePassword_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TenantComplaints</Name>
+        <Access>Public</Access>
+        <Location left="2452" top="937" />
+        <Size width="338" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">List&lt;TenantClass&gt; alltenants</Member>
+        <Member type="Field">TenantClass reportedTenant</Member>
+        <Member type="Field">TenantClass currentTenant</Member>
+        <Member type="Constructor">public TenantComplaints()</Member>
+        <Member type="Method">private void TenantComplaint_Load(object sender, EventArgs e)</Member>
+        <Member type="Method">private void btnFile_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TenantEsentials</Name>
+        <Access>Public</Access>
+        <Location left="3238" top="732" />
+        <Size width="338" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">List&lt;TenantClass&gt; allTenants</Member>
+        <Member type="Field">TenantClass currentTenant</Member>
+        <Member type="Field">static int s</Member>
+        <Member type="Field">private int nrOfTenants</Member>
+        <Member type="Field">private int goal</Member>
+        <Member type="Constructor">public TenantEsentials()</Member>
+        <Member type="Method">private void TenantEsentials_Load(object sender, EventArgs e)</Member>
+        <Member type="Method">private void addbtn_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TenantRules</Name>
+        <Access>Public</Access>
+        <Location left="2003" top="548" />
+        <Size width="334" height="150" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;String&gt; rules</Member>
+        <Member type="Constructor">public TenantRules()</Member>
+        <Member type="Method">private void TenantRules_Load(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TenantTasks</Name>
+        <Access>Public</Access>
+        <Location left="2003" top="267" />
+        <Size width="334" height="189" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">TenantClass currentTenant</Member>
+        <Member type="Field">List&lt;String&gt; tasks</Member>
+        <Member type="Constructor">public TenantTasks()</Member>
+        <Member type="Method">public void UpdateListBox()</Member>
+        <Member type="Method">private void TenantTask_Load(object sender, EventArgs e)</Member>
+        <Member type="Method">private void btnFinished_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TenantAnnouncements</Name>
+        <Access>Public</Access>
+        <Location left="2003" top="807" />
+        <Size width="338" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;int&gt; votes</Member>
+        <Member type="Field">private List&lt;String&gt; announcements</Member>
+        <Member type="Field">private List&lt;TenantClass&gt; allTenants</Member>
+        <Member type="Field">int newField</Member>
+        <Member type="Constructor">public TenantAnnouncements()</Member>
+        <Member type="Method">private void TenantAnnouncements_Load(object sender, EventArgs e)</Member>
+        <Member type="Method">private void button1_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CompanyAccount</Name>
+        <Access>Public</Access>
+        <Location left="491" top="345" />
+        <Size width="342" height="134" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public CompanyAccount()</Member>
+        <Member type="Method">private void btnLogOut_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void btnChangePassword_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CompanyAddAnnouncements</Name>
+        <Access>Public</Access>
+        <Location left="894" top="301" />
+        <Size width="314" height="123" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public CompanyAddAnnouncements()</Member>
+        <Member type="Method">private void btnAdd_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CompanyAddRules</Name>
+        <Access>Public</Access>
+        <Location left="894" top="452" />
+        <Size width="320" height="129" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public CompanyAddRules()</Member>
+        <Member type="Method">private void btnAdd_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CompanyAnnouncemnts</Name>
+        <Access>Public</Access>
+        <Location left="894" top="638" />
+        <Size width="314" height="173" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;String&gt; announcements</Member>
+        <Member type="Constructor">public CompanyAnnouncemnts()</Member>
+        <Member type="Method">public List&lt;String&gt; getAnnouncements()</Member>
+        <Member type="Method">private void btnAddAnnouncement_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void btnUpdate_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CompanyComplaints</Name>
+        <Access>Public</Access>
+        <Location left="404" top="833" />
+        <Size width="314" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">List&lt;TenantClass&gt; allTenants</Member>
+        <Member type="Field">TenantClass currentTenant</Member>
+        <Member type="Field">List&lt;String&gt; complaints</Member>
+        <Member type="Constructor">public CompanyComplaints()</Member>
+        <Member type="Method">private void CompanyComplaints_Load(object sender, EventArgs e)</Member>
+        <Member type="Method">private void btnShowComplaints_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">public void UpdateListBox()</Member>
+        <Member type="Method">private void btnRemoveComplaint_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CompanyHome</Name>
+        <Access>Public</Access>
+        <Location left="802" top="851" />
+        <Size width="314" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public CompanyHome()</Member>
+        <Member type="Method">private void lblComplaints_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void lblAnnouncements_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void lblTenants_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void lblLogOut_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void lblRules_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void lblAccount_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void pbAccountSettings_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CompanyRules</Name>
+        <Access>Public</Access>
+        <Location left="48" top="806" />
+        <Size width="314" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;String&gt; rules</Member>
+        <Member type="Constructor">public CompanyRules()</Member>
+        <Member type="Method">public List&lt;String&gt; getRules()</Member>
+        <Member type="Method">public void updateListBox()</Member>
+        <Member type="Method">private void CompanyRules_Load(object sender, EventArgs e)</Member>
+        <Member type="Method">private void btnAddRule_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void btnViewRule_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void btnRemoveRule_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CompanyTasks</Name>
+        <Access>Public</Access>
+        <Location left="67" top="594" />
+        <Size width="314" height="174" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;TenantClass&gt; allTenants</Member>
+        <Member type="Field">private TenantClass currentTenant</Member>
+        <Member type="Constructor">public CompanyTasks()</Member>
+        <Member type="Method">private void CompanyTasks_Load(object sender, EventArgs e)</Member>
+        <Member type="Method">private void btnAssign_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CompanyTenants</Name>
+        <Access>Public</Access>
+        <Location left="67" top="391" />
+        <Size width="314" height="184" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;TenantClass&gt; allTenants</Member>
+        <Member type="Field">LogInScreen login</Member>
+        <Member type="Constructor">public CompanyTenants()</Member>
+        <Member type="Method">private void CompanyTenants_Load(object sender, EventArgs e)</Member>
+        <Member type="Method">private void btnAdd_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void btnMakeSoTM_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CompanyUpdateAnnouncements</Name>
+        <Access>Public</Access>
+        <Location left="67" top="208" />
+        <Size width="314" height="160" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;String&gt; announcements</Member>
+        <Member type="Field">private int Index</Member>
+        <Member type="Constructor">public CompanyUpdateAnnouncements(String announcement, int index)</Member>
+        <Member type="Method">private void btnUpdate_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CompanyUpdateRule</Name>
+        <Access>Public</Access>
+        <Location left="491" top="115" />
+        <Size width="342" height="155" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;String&gt; rules</Member>
+        <Member type="Field">private int Index</Member>
+        <Member type="Constructor">public CompanyUpdateRule(String rule, int index)</Member>
+        <Member type="Method">private void btnUpdate_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="1" second="0">
+        <Label>populated by</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="9">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>-complaints</EndRole>
+        <EndMultiplicity>1..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="10">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>-student</EndRole>
+        <EndMultiplicity>1..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="12">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>-student</EndRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="11">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>-rules</EndRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="8">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>-student</EndRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="13">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>-announcements</EndRole>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="13" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="11" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="12" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="6" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="6" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="19">
+        <Label>populated by</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>-admin</EndRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="16">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>-rule</EndRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="15">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>-announcement</EndRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="14">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="18">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>-complaints</EndRole>
+        <EndMultiplicity>0..1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="20">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>-rules</EndRole>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="21">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>-tasks</EndRole>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="22">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>-tenants</EndRole>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="23">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>-announcement</EndRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="24">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>-rule</EndRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

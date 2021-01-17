@@ -10,4 +10,18 @@
 -Change password from account
 -Remove remove complaints button from admin
 -Due date and status for tasks
+#4 January 15th 2021, 23 minutes and 40 seconds
+-complain about company
+- exact day for tasks
+- what happens when you dont finish a task 
+- fix essentials
+- Report: roadmap + issues + improvements that need to be done
+		+ my contribution to the project + feedback
+		+"I wouldhave liked to linke it to social media"
 
+- Presentation: problem + solution -> result
+		+ cocnlusion
+		+ show demo
+		A full complete story 
+
+- design your demo (make a story when presenting)
