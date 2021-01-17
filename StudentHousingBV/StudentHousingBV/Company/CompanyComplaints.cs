@@ -14,7 +14,7 @@ namespace StudentHousingBV
     {
         List<TenantClass> allTenants;
         TenantClass currentTenant;
-        List<String> complaints;
+        List<Complaint> complaints;
         public CompanyComplaints()
         {
             InitializeComponent();
@@ -58,15 +58,35 @@ namespace StudentHousingBV
 
             for (int i = 0; i < complaints.Count(); i++)
             {
-                this.lbComplaints.Items.Add(complaints[i]);
+                String complaint = complaints[i].getType().ToString().ToLower();
+                String complaintFormatted = char.ToUpper(complaint[0]) + complaint.Substring(1);
+                String item;
+
+                if (complaint != "unlocked")
+                {
+                    item = complaintFormatted + "\t\t" + complaints[i].getDateCreated();
+                }
+                else
+                {
+                    item = complaintFormatted + "\t" + complaints[i].getDateCreated();
+                }
+
+                lbComplaints.Items.Add(item);
             }
         }
 
-        private void btnRemoveComplaint_Click(object sender, EventArgs e)
+        private void lbComplaints_SelectedIndexChanged(object sender, EventArgs e)
         {
-            String complaint = Convert.ToString(this.lbComplaints.SelectedItem);
-            currentTenant.removeComplaints(complaint);
-            UpdateListBox();
+            Complaint complaint = complaints[lbComplaints.SelectedIndex];
+
+            if (complaint.getMessage() != null)
+            {
+                tbComplaintMessage.Text = complaint.getMessage();
+            }
+            else
+            {
+                tbComplaintMessage.Text = "This complaint has no message";
+            }
         }
     }
 }

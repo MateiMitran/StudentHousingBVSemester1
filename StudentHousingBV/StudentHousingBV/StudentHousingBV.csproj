@@ -115,6 +115,8 @@
     <Compile Include="Company\CompanyTenants.Designer.cs">
       <DependentUpon>CompanyTenants.cs</DependentUpon>
     </Compile>
+    <Compile Include="Complaint.cs" />
+    <Compile Include="ComplaintTypeEnum.cs" />
     <Compile Include="Rule.cs" />
     <Compile Include="Task.cs" />
     <Compile Include="TenantClass.cs" />

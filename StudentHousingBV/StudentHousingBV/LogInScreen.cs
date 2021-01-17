@@ -121,6 +121,9 @@ namespace StudentHousingBV
                             this.Hide();
                             file.Close();
 
+                            tbUserName.Text = "";
+                            tbPassword.Text = "";
+
                             CompanyHome companyScreen = new CompanyHome();
                             companyScreen.Show();
                         }
@@ -139,6 +142,9 @@ namespace StudentHousingBV
 
                             this.Hide();
                             file.Close();
+
+                            tbUserName.Text = "";
+                            tbPassword.Text = "";
 
                             TenantHome tenantScreen = new TenantHome();
                             tenantScreen.Show();

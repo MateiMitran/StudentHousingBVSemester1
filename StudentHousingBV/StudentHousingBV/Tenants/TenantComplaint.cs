@@ -51,34 +51,45 @@ namespace StudentHousingBV
                     }
                 }
 
+                Complaint newComplaint = new Complaint();
+                bool error = false;
+
                 if (this.rbLoud.Checked)
                 {
-                    reportedTenant.addComplaints("Noise");
-                    MessageBox.Show("Complaint filed!");
+                    newComplaint.addType(ComplaintTypeEnum.NOISE);
                 }
                 else if (this.rbDirty.Checked)
                 {
-                    reportedTenant.addComplaints("Dirty");
-                    MessageBox.Show("Complaint filed!");
+                    newComplaint.addType(ComplaintTypeEnum.DIRTY);
                 }
                 else if (this.rbTrash.Checked)
                 {
-                    reportedTenant.addComplaints("Trash");
-                    MessageBox.Show("Complaint filed!");
+                    newComplaint.addType(ComplaintTypeEnum.TRASH);
                 }
                 else if (this.rbUnlocked.Checked)
                 {
-                    reportedTenant.addComplaints("Unlocked");
-                    MessageBox.Show("Complaint filed!");
-                }
-                else if (this.tbCustom.TextLength > 0)
+                    newComplaint.addType(ComplaintTypeEnum.UNLOCKED);
+                } else if (this.rbOther.Checked)
                 {
-                    reportedTenant.addComplaints(this.tbCustom.Text);
-                    MessageBox.Show("Complaint filed!");
+                    newComplaint.addType(ComplaintTypeEnum.OTHER);
                 }
                 else
                 {
+                    error = true;
                     MessageBox.Show("No complaint selected!");
+                }
+
+                if(tbCustom.Text.Trim() != "")
+                {
+                    newComplaint.addMessage(tbCustom.Text.Trim());
+                }
+
+                if(error == false)
+                {
+                    reportedTenant.addComplaints(newComplaint);
+
+                    MessageBox.Show("Successfully filed a new complaint!");
+                    this.Close();
                 }
             } else
             {

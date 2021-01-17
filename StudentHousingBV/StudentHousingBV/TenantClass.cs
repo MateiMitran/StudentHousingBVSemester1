@@ -13,7 +13,7 @@ namespace StudentHousingBV
         private String name;
         private String password;
         private int reports;
-        private List<String> complaints = new List<String>();
+        private List<Complaint> complaints = new List<Complaint>();
         private List<String> tasks = new List<String>();
         private bool studentOfTheMonth = false;
         private int bank;
@@ -33,8 +33,8 @@ namespace StudentHousingBV
                 this.balance -= this.moneyContributed;
                 this.voted = true;
                 return true;
-
             }
+
             return false;
         }
         public bool Chose()
@@ -73,12 +73,12 @@ namespace StudentHousingBV
         {
             password = newPassword;
         }
-        public void addComplaints(String complaint)
+        public void addComplaints(Complaint complaint)
         {
             complaints.Add(complaint);
             reports++;
         }
-        public void removeComplaints(String complaint)
+        public void removeComplaints(Complaint complaint)
         {
             complaints.Remove(complaint);
             reports--;
@@ -107,7 +107,7 @@ namespace StudentHousingBV
         {
             return tasks;
         }
-        public List<String> getComplaints()
+        public List<Complaint> getComplaints()
         {
             return complaints;
         }

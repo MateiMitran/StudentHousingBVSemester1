@@ -41,6 +41,8 @@ namespace StudentHousingBV
             this.rbDirty = new System.Windows.Forms.RadioButton();
             this.rbLoud = new System.Windows.Forms.RadioButton();
             this.rbUnlocked = new System.Windows.Forms.RadioButton();
+            this.rbOther = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelComplaints.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,9 +86,9 @@ namespace StudentHousingBV
             this.lblCustom.Location = new System.Drawing.Point(642, 173);
             this.lblCustom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCustom.Name = "lblCustom";
-            this.lblCustom.Size = new System.Drawing.Size(687, 37);
+            this.lblCustom.Size = new System.Drawing.Size(535, 37);
             this.lblCustom.TabIndex = 0;
-            this.lblCustom.Text = "Something out of the ordinary? Let us know:";
+            this.lblCustom.Text = "Add a message to your complaint:";
             // 
             // tbCustom
             // 
@@ -172,7 +174,7 @@ namespace StudentHousingBV
             // 
             this.rbUnlocked.AutoSize = true;
             this.rbUnlocked.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.rbUnlocked.Location = new System.Drawing.Point(33, 572);
+            this.rbUnlocked.Location = new System.Drawing.Point(33, 552);
             this.rbUnlocked.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rbUnlocked.Name = "rbUnlocked";
             this.rbUnlocked.Size = new System.Drawing.Size(389, 36);
@@ -181,12 +183,36 @@ namespace StudentHousingBV
             this.rbUnlocked.Text = "Main door found unlocked?";
             this.rbUnlocked.UseVisualStyleBackColor = true;
             // 
+            // rbOther
+            // 
+            this.rbOther.AutoSize = true;
+            this.rbOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.rbOther.Location = new System.Drawing.Point(33, 632);
+            this.rbOther.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rbOther.Name = "rbOther";
+            this.rbOther.Size = new System.Drawing.Size(117, 36);
+            this.rbOther.TabIndex = 12;
+            this.rbOther.TabStop = true;
+            this.rbOther.Text = "Other";
+            this.rbOther.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1193, 177);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 25);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "*optional";
+            // 
             // TenantComplaint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1522, 862);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.rbOther);
             this.Controls.Add(this.rbUnlocked);
             this.Controls.Add(this.rbLoud);
             this.Controls.Add(this.rbDirty);
@@ -226,5 +252,7 @@ namespace StudentHousingBV
         private System.Windows.Forms.RadioButton rbDirty;
         private System.Windows.Forms.RadioButton rbLoud;
         private System.Windows.Forms.RadioButton rbUnlocked;
+        private System.Windows.Forms.RadioButton rbOther;
+        private System.Windows.Forms.Label label1;
     }
 }

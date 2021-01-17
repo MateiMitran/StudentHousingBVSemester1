@@ -29,11 +29,6 @@ namespace StudentHousingBV
             return currentTenant;
         }
 
-        public void AddComplaints(TenantClass reportedTenant,String complaint)
-        {
-            reportedTenant.addComplaints(complaint);
-        }
-
         private void ClientHome_Load(object sender, EventArgs e)
         {
             LogInScreen login = (LogInScreen)Application.OpenForms["LogInScreen"];
