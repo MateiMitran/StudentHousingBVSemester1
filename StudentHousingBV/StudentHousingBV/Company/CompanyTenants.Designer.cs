@@ -41,6 +41,8 @@ namespace StudentHousingBV
             this.tbNewPassword = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnGenerateRandomPassword = new System.Windows.Forms.Button();
+            this.cbNewUserRole = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -53,7 +55,7 @@ namespace StudentHousingBV
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(1200, 94);
             this.lblTitle.TabIndex = 5;
-            this.lblTitle.Text = "Manange Tenants";
+            this.lblTitle.Text = "Manange Users";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox1
@@ -83,9 +85,9 @@ namespace StudentHousingBV
             this.label2.Location = new System.Drawing.Point(612, 179);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 32);
+            this.label2.Size = new System.Drawing.Size(224, 32);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Add a new tenant";
+            this.label2.Text = "Add a new user";
             // 
             // tbNewUsername
             // 
@@ -98,7 +100,7 @@ namespace StudentHousingBV
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(618, 475);
+            this.btnAdd.Location = new System.Drawing.Point(618, 587);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(418, 66);
@@ -165,13 +167,35 @@ namespace StudentHousingBV
             this.btnGenerateRandomPassword.UseVisualStyleBackColor = true;
             this.btnGenerateRandomPassword.Click += new System.EventHandler(this.btnGenerateRandomPassword_Click);
             // 
+            // cbNewUserRole
+            // 
+            this.cbNewUserRole.FormattingEnabled = true;
+            this.cbNewUserRole.Items.AddRange(new object[] {
+            "tenant",
+            "admin"});
+            this.cbNewUserRole.Location = new System.Drawing.Point(618, 491);
+            this.cbNewUserRole.Name = "cbNewUserRole";
+            this.cbNewUserRole.Size = new System.Drawing.Size(418, 33);
+            this.cbNewUserRole.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(613, 463);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(120, 25);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Select role:";
+            // 
             // CompanyTenants
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1200, 703);
+            this.Controls.Add(this.cbNewUserRole);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnMakeSoTM);
@@ -206,5 +230,7 @@ namespace StudentHousingBV
         private System.Windows.Forms.TextBox tbNewPassword;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnGenerateRandomPassword;
+        private System.Windows.Forms.ComboBox cbNewUserRole;
+        private System.Windows.Forms.Label label6;
     }
 }

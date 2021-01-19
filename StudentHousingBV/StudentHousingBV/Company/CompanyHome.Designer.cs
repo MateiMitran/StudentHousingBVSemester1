@@ -145,12 +145,12 @@ namespace StudentHousingBV
             this.lblTenants.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTenants.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblTenants.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.lblTenants.Location = new System.Drawing.Point(1089, 47);
+            this.lblTenants.Location = new System.Drawing.Point(1110, 47);
             this.lblTenants.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTenants.Name = "lblTenants";
-            this.lblTenants.Size = new System.Drawing.Size(146, 32);
+            this.lblTenants.Size = new System.Drawing.Size(112, 32);
             this.lblTenants.TabIndex = 6;
-            this.lblTenants.Text = "TENANTS";
+            this.lblTenants.Text = "USERS";
             this.lblTenants.Click += new System.EventHandler(this.lblTenants_Click);
             // 
             // lblComplaints

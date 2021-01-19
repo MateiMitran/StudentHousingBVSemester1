@@ -18,6 +18,9 @@ namespace StudentHousingBV
         private List<TenantClass> allTenants;
         LogInScreen login = (LogInScreen)Application.OpenForms["LogInScreen"];
 
+        List<string> tenantUsernames;
+        List<string> adminUsernames;
+
         public CompanyTenants()
         {
             InitializeComponent();
@@ -35,64 +38,55 @@ namespace StudentHousingBV
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            /*            if (this.textBox1.TextLength > 0)
+            String newTenantName = tbNewUsername.Text.Trim();
+            String newTenantPassword = tbNewPassword.Text.Trim();
+            String newTenantRole = cbNewUserRole.Text.Trim();
+
+            if(newTenantName != "")
+            {
+                tenantUsernames = login.getTenantUsernames();
+                adminUsernames = login.getAdminUsernames();
+
+                if (tenantUsernames.IndexOf(newTenantName) == -1 && adminUsernames.IndexOf(newTenantName) == -1)
+                {
+                    if (newTenantPassword != "")
+                    {
+                        if (newTenantRole == "tenant" || newTenantRole == "admin")
                         {
-                            TenantClass x = new TenantClass(this.textBox1.Text, "password");
-                            login.addTenant(x);
+                            TenantClass newTenant = new TenantClass(newTenantName, newTenantPassword);
+                            login.addTenant(newTenant);
 
                             String path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"../../users.txt");
 
                             List<String> lines = new List<String>();
                             lines = File.ReadAllLines(path).ToList();
 
-                            lines.Add(Regex.Replace(this.textBox1.Text, @"\s+", "") + " password " + "user");
+                            lines.Add(Regex.Replace(newTenantName, @"\s+", "") + " " + newTenantPassword + " " + newTenantRole);
                             File.WriteAllLines(path, lines);
-                            this.comboBox1.Items.Add(x.getName());
+                            this.comboBox1.Items.Add(newTenant.getName());
 
-                            MessageBox.Show("Tenant added successfuly!");
-                            textBox1.Text = "";
-                        } else
+                            if(newTenantRole == "admin")
+                            {
+                                adminUsernames.Add(newTenantName);
+                            }
+                            else
+                            {
+                                tenantUsernames.Add(newTenantName);
+                            }
+
+                            tbNewUsername.Text = "";
+                            tbNewPassword.Text = "";
+                            cbNewUserRole.Text = "";
+                            MessageBox.Show("User added successfuly!");
+                        }
+                        else
                         {
-                            MessageBox.Show("Please enter a tenant name to add!");
-                        }*/
-            String newTenantName = tbNewUsername.Text.Trim();
-            String newTenantPassword = tbNewPassword.Text.Trim();
-
-            if(newTenantName != "")
-            {
-                bool uniqueUsername = true;
-
-                for(int i = 0; i < allTenants.Count; i++)
-                {
-                    if (newTenantName == allTenants[i].getName().Trim())
-                    {
-                        uniqueUsername = false;
-                    }
-                }
-
-                if(uniqueUsername == true)
-                {
-                    if (newTenantPassword != "")
-                    {
-                        TenantClass newTenant = new TenantClass(newTenantName, newTenantPassword);
-                        login.addTenant(newTenant);
-
-                        String path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"../../users.txt");
-
-                        List<String> lines = new List<String>();
-                        lines = File.ReadAllLines(path).ToList();
-
-                        lines.Add(Regex.Replace(newTenantName, @"\s+", "") + " " + newTenantPassword + " user");
-                        File.WriteAllLines(path, lines);
-                        this.comboBox1.Items.Add(newTenant.getName());
-
-                        tbNewUsername.Text = "";
-                        tbNewPassword.Text = "";
-                        MessageBox.Show("Tenant added successfuly!");
+                            MessageBox.Show("Please select a valid role for the new user");
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Please choose a password for the new tenant");
+                        MessageBox.Show("Please choose a password for the new user");
                     }
                 } else
                 {
@@ -101,7 +95,7 @@ namespace StudentHousingBV
                 }
             } else
             {
-                MessageBox.Show("Please enter a username for the new tenant");
+                MessageBox.Show("Please enter a username for the new user");
             }
         }
 

@@ -23,6 +23,7 @@ namespace StudentHousingBV
         public static TenantClass currentTenant;
         public static Admin currentAdmin;
         public static List<string> tenantUsernames = new List<string>();
+        public static List<string> adminUsernames = new List<string>();
 
         public LogInScreen()
         {
@@ -61,6 +62,7 @@ namespace StudentHousingBV
                 {
                     Admin newAdmin = new Admin(username, password);
                     admins.Add(newAdmin);
+                    adminUsernames.Add(newAdmin.getName());
                 }
             }
 
@@ -260,6 +262,16 @@ namespace StudentHousingBV
         public Admin getAdmin()
         {
             return currentAdmin;
+        }
+
+        public List<String> getTenantUsernames()
+        {
+            return tenantUsernames;
+        }
+
+        public List<String> getAdminUsernames()
+        {
+            return adminUsernames;
         }
 
         private void btnLogIn_MouseHover(object sender, EventArgs e)
