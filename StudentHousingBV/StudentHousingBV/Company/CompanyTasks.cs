@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -34,38 +37,96 @@ namespace StudentHousingBV
 
         private void btnAssign_Click(object sender, EventArgs e)
         {
-            if (this.textBox1.TextLength == 0 || this.comboBox1.SelectedIndex == -1)
+            if (this.textBox1.Text.Trim() == "" || this.comboBox1.SelectedIndex == -1)
             {
                 MessageBox.Show("Select a tenant and a due time!");
             }
             else
             {
-                for (int i = 0; i < allTenants.Count(); i++)
+                string format = "dd/MM/yyyy";
+                DateTime dueDate;
+
+                if (DateTime.TryParseExact(textBox1.Text.Trim(), format, CultureInfo.InvariantCulture,
+                    DateTimeStyles.None, out dueDate))
                 {
-                    if (allTenants[i].getName() == Convert.ToString(this.comboBox1.SelectedItem))
+                    if (DateTime.Compare(dueDate, DateTime.Today) >= 0)
                     {
-                        currentTenant = allTenants[i];
+                        for (int i = 0; i < allTenants.Count(); i++)
+                        {
+                            if (allTenants[i].getName() == Convert.ToString(this.comboBox1.SelectedItem))
+                            {
+                                currentTenant = allTenants[i];
+                            }
+                        }
+
+                        bool selectedTask = false;
+                        Task newTask = new Task(dueDate);
+
+                        if (this.rbClean.Checked)
+                        {
+                            newTask.setTaskType(TaskTypeEnum.CLEAN);
+                            selectedTask = true;
+                        }
+                        else if (this.rbDishes.Checked)
+                        {
+                            newTask.setTaskType(TaskTypeEnum.DISHES);
+                            selectedTask = true;
+                        }
+                        else if (this.rbGroceries.Checked)
+                        {
+                            newTask.setTaskType(TaskTypeEnum.GROCERIES);
+                            selectedTask = true;
+                        }
+                        else if (this.rbTrash.Checked)
+                        {
+                            newTask.setTaskType(TaskTypeEnum.TRASH);
+                            selectedTask = true;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Please select a task to assign to tenant");
+                        }
+
+                        if (selectedTask == true)
+                        {
+                            // Write to tasks.txt new task
+
+                            String path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"../../tasks.txt");
+
+                            using (System.IO.StreamWriter file = new System.IO.StreamWriter(path, true))
+                            {
+                                String taskString = currentTenant.getName() + " -%- " + newTask.getTaskType() + " -%- " + newTask.getDueDate() + " -%- " + newTask.getStatus() + " -%- " + newTask.getId();
+                                file.WriteLine(taskString);
+                                file.Close();
+                            }
+
+                            comboBox1.Text = "";
+                            textBox1.Text = "DD/MM/YYYY";
+
+                            rbTrash.Checked = false;
+                            rbDishes.Checked = false;
+                            rbGroceries.Checked = false;
+                            rbClean.Checked = false;
+
+                            MessageBox.Show("Task assigned successfuly!");
+                        }
                     }
+                    else
+                    {
+                        MessageBox.Show("Deadline cannot be a past date");
+                    }
+                } else
+                {
+                    MessageBox.Show("Invalid date, please try again.");
                 }
+            }
+        }
 
-                if (this.rbClean.Checked)
-                {
-                    currentTenant.addTasks("Clean,   Due:" + this.textBox1.Text + " Status: UNFINISHED");
-                }
-                else if (this.rbDishes.Checked)
-                {
-                    currentTenant.addTasks("Dishes,   Due:" + this.textBox1.Text + " Status: UNFINISHED");
-                }
-                else if (this.rbGroceries.Checked)
-                {
-                    currentTenant.addTasks("Groceries,   Due:" + this.textBox1.Text + " Status: UNFINISHED");
-                }
-                else if (this.rbTrash.Checked)
-                {
-                    currentTenant.addTasks("Trash,   Due:" + this.textBox1.Text + " Status: UNFINISHED");
-                }
-
-                MessageBox.Show("Assigned successfuly!");
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if(textBox1.Text == "DD/MM/YYYY")
+            {
+                textBox1.Text = "";
             }
         }
     }

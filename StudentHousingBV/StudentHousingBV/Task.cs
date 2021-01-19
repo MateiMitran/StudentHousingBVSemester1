@@ -6,17 +6,92 @@ using System.Threading.Tasks;
 
 namespace StudentHousingBV
 {
-    class Task
+    public class Task
     {
-        private String task;
+        private TaskTypeEnum taskType;
+        private DateTime dueDate;
+        private bool finishedStatus; // False = unfinished, True = finished
+        private int id;
+        public static int nextId = 0;
 
-        public Task(String Task)
+        public Task(DateTime dueDate)
         {
-           task = Task;
+            this.dueDate = dueDate;
+            this.finishedStatus = false;
+            this.id = nextId;
+
+            nextId++;
         }
-        public String getTask()
+
+        public Task(TaskTypeEnum task, DateTime dueDate)
         {
-            return task;
+            this.taskType = task;
+            this.dueDate = dueDate;
+            this.finishedStatus = false;
+            this.id = nextId;
+
+            nextId++;
+        }
+
+        public Task(TaskTypeEnum task, DateTime dueDate, bool finishedStatus)
+        {
+            this.taskType = task;
+            this.dueDate = dueDate;
+            this.finishedStatus = finishedStatus;
+            this.id = nextId;
+
+            nextId++;
+        }
+
+        public Task(TaskTypeEnum task, DateTime dueDate, bool finishedStatus, int id)
+        {
+            this.taskType = task;
+            this.dueDate = dueDate;
+            this.finishedStatus = finishedStatus;
+            this.id = id;
+
+            nextId = nextId + id;
+        }
+
+        public void setTaskType(TaskTypeEnum type)
+        {
+            this.taskType = type;
+        }
+
+        public TaskTypeEnum getTaskType()
+        {
+            return taskType;
+        }
+
+        public DateTime getDueDate()
+        {
+            return dueDate;
+        }
+
+        public void setStatus(bool status)
+        {
+            this.finishedStatus = status;
+        }
+
+        public bool getStatus()
+        {
+            return finishedStatus;
+        }
+
+        public String getStatusWords()
+        {
+            if(this.finishedStatus == false)
+            {
+                return "Unfinished";
+            } else
+            {
+                return "Finished";
+            }
+        }
+
+        public int getId()
+        {
+            return id;
         }
     }
 }

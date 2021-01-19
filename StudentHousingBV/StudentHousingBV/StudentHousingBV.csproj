@@ -119,6 +119,7 @@
     <Compile Include="ComplaintTypeEnum.cs" />
     <Compile Include="Rule.cs" />
     <Compile Include="Task.cs" />
+    <Compile Include="TaskTypeEnum.cs" />
     <Compile Include="TenantClass.cs" />
     <Compile Include="Tenants\TenantChangePassword.cs">
       <SubType>Form</SubType>

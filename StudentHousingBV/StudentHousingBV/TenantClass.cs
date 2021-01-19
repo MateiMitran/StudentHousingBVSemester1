@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentHousingBV
 {
-     public class TenantClass
+    public class TenantClass
     {
         public int moneyContributed = 2;
         public int voteContributed = 1;
@@ -14,13 +14,14 @@ namespace StudentHousingBV
         private String password;
         private int reports;
         private List<Complaint> complaints = new List<Complaint>();
-        private List<String> tasks = new List<String>();
+        private List<Task> tasks = new List<Task>();
         private bool studentOfTheMonth = false;
         private int bank;
         public int balance = 10;
         public int option = 1;
         public bool voted = false;
         public bool choose = false;
+
         public TenantClass(String nameOfTenant, String tenantPassword)
         {
             name = nameOfTenant;
@@ -83,11 +84,11 @@ namespace StudentHousingBV
             complaints.Remove(complaint);
             reports--;
         }
-        public void addTasks(String task)
+        public void addTasks(Task task)
         {
             tasks.Add(task);
         }
-        public void removeTasks(String task)
+        public void removeTasks(Task task)
         {
             tasks.Remove(task);
         }
@@ -103,7 +104,7 @@ namespace StudentHousingBV
         {
             return reports;
         }
-        public List<String> getTasks()
+        public List<Task> getTasks()
         {
             return tasks;
         }
