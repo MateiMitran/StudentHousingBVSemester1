@@ -46,55 +46,62 @@ namespace StudentHousingBV
 
             if (currentPassword == currentAdminPassword)
             {
-                if (newPassword == verifyNewPassword)
+                if (newPassword.Trim() != "")
                 {
-                    // Read users.txt and compare current password
-                    String path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"../../users.txt");
-                    String newPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"../../new-users.txt");
-
-                    System.IO.StreamReader fileRead = new System.IO.StreamReader(path);
-
-                    String line;
-                    String text = "";
-
-                    while ((line = fileRead.ReadLine()) != null)
+                    if (newPassword == verifyNewPassword)
                     {
-                        String[] elements = line.Split(' ');
-                        String username = elements[0];
-                        String password = elements[1];
-                        String role = elements[2];
+                        // Read users.txt and compare current password
+                        String path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"../../users.txt");
+                        String newPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"../../new-users.txt");
 
-                        if (currentAdminName == username)
-                        {
-                            String info = username + " " + newPassword + " " + role;
-                            text += info + Environment.NewLine;
+                        System.IO.StreamReader fileRead = new System.IO.StreamReader(path);
 
-                            currentAdmin.setPassword(newPassword);
-                        }
-                        else
+                        String line;
+                        String text = "";
+
+                        while ((line = fileRead.ReadLine()) != null)
                         {
-                            text += line + Environment.NewLine;
+                            String[] elements = line.Split(' ');
+                            String username = elements[0];
+                            String password = elements[1];
+                            String role = elements[2];
+
+                            if (currentAdminName == username)
+                            {
+                                String info = username + " " + newPassword + " " + role;
+                                text += info + Environment.NewLine;
+
+                                currentAdmin.setPassword(newPassword);
+                            }
+                            else
+                            {
+                                text += line + Environment.NewLine;
+                            }
                         }
+
+                        fileRead.Close();
+
+                        // Write old file into new file, delete old file and rename new file
+                        File.WriteAllText(newPath, text);
+                        fileRead.Close();
+                        File.Delete(path);
+                        fileRead.Close();
+                        File.Move(newPath, path);
+
+                        // Close current form
+                        MessageBox.Show("Password change successfully!");
+                        tbCurrentPassword.Text = "";
+                        tbNewPassword.Text = "";
+                        tbVerifyNewPassword.Text = "";
                     }
-
-                    fileRead.Close();
-
-                    // Write old file into new file, delete old file and rename new file
-                    File.WriteAllText(newPath, text);
-                    fileRead.Close();
-                    File.Delete(path);
-                    fileRead.Close();
-                    File.Move(newPath, path);
-
-                    // Close current form
-                    MessageBox.Show("Password change successfully!");
-                    tbCurrentPassword.Text = "";
-                    tbNewPassword.Text = "";
-                    tbVerifyNewPassword.Text = "";
+                    else
+                    {
+                        MessageBox.Show("Your new password and confirmation password do not match.");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Your new password and confirmation password do not match.");
+                    MessageBox.Show("New password cannot be empty");
 
                     tbCurrentPassword.Text = "";
                     tbNewPassword.Text = "";

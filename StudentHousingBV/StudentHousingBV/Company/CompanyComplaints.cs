@@ -77,7 +77,13 @@ namespace StudentHousingBV
 
         private void lbComplaints_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Complaint complaint = complaints[lbComplaints.SelectedIndex];
+
+            Complaint complaint = new Complaint();
+
+            if (lbComplaints.SelectedIndex >= 0)
+            {
+                complaint = complaints[lbComplaints.SelectedIndex];
+            }
 
             if (complaint.getMessage() != null)
             {

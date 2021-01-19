@@ -100,7 +100,7 @@ namespace StudentHousingBV
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(618, 587);
+            this.btnAdd.Location = new System.Drawing.Point(618, 559);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(418, 66);
@@ -173,7 +173,7 @@ namespace StudentHousingBV
             this.cbNewUserRole.Items.AddRange(new object[] {
             "tenant",
             "admin"});
-            this.cbNewUserRole.Location = new System.Drawing.Point(618, 491);
+            this.cbNewUserRole.Location = new System.Drawing.Point(618, 480);
             this.cbNewUserRole.Name = "cbNewUserRole";
             this.cbNewUserRole.Size = new System.Drawing.Size(418, 33);
             this.cbNewUserRole.TabIndex = 13;
@@ -181,7 +181,7 @@ namespace StudentHousingBV
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(613, 463);
+            this.label6.Location = new System.Drawing.Point(613, 452);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(120, 25);
             this.label6.TabIndex = 12;
