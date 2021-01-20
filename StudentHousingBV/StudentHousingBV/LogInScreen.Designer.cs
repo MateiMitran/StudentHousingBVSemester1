@@ -129,6 +129,7 @@ namespace StudentHousingBV
             this.MinimizeBox = false;
             this.Name = "LogInScreen";
             this.Text = "Log In";
+            this.Load += new System.EventHandler(this.LogInScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

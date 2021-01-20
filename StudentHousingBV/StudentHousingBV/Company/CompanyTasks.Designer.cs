@@ -45,19 +45,17 @@ namespace StudentHousingBV
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(93, 145);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Location = new System.Drawing.Point(62, 93);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(266, 33);
+            this.comboBox1.Size = new System.Drawing.Size(179, 24);
             this.comboBox1.TabIndex = 0;
             // 
             // rbTrash
             // 
             this.rbTrash.AutoSize = true;
-            this.rbTrash.Location = new System.Drawing.Point(93, 231);
-            this.rbTrash.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rbTrash.Location = new System.Drawing.Point(62, 148);
             this.rbTrash.Name = "rbTrash";
-            this.rbTrash.Size = new System.Drawing.Size(181, 29);
+            this.rbTrash.Size = new System.Drawing.Size(121, 21);
             this.rbTrash.TabIndex = 1;
             this.rbTrash.TabStop = true;
             this.rbTrash.Text = "Take trash out";
@@ -66,10 +64,9 @@ namespace StudentHousingBV
             // rbDishes
             // 
             this.rbDishes.AutoSize = true;
-            this.rbDishes.Location = new System.Drawing.Point(93, 295);
-            this.rbDishes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rbDishes.Location = new System.Drawing.Point(62, 189);
             this.rbDishes.Name = "rbDishes";
-            this.rbDishes.Size = new System.Drawing.Size(175, 29);
+            this.rbDishes.Size = new System.Drawing.Size(116, 21);
             this.rbDishes.TabIndex = 2;
             this.rbDishes.TabStop = true;
             this.rbDishes.Text = "Do the dishes";
@@ -78,10 +75,9 @@ namespace StudentHousingBV
             // rbGroceries
             // 
             this.rbGroceries.AutoSize = true;
-            this.rbGroceries.Location = new System.Drawing.Point(93, 357);
-            this.rbGroceries.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rbGroceries.Location = new System.Drawing.Point(62, 228);
             this.rbGroceries.Name = "rbGroceries";
-            this.rbGroceries.Size = new System.Drawing.Size(165, 29);
+            this.rbGroceries.Size = new System.Drawing.Size(110, 21);
             this.rbGroceries.TabIndex = 3;
             this.rbGroceries.TabStop = true;
             this.rbGroceries.Text = "Do groceries";
@@ -90,10 +86,9 @@ namespace StudentHousingBV
             // rbClean
             // 
             this.rbClean.AutoSize = true;
-            this.rbClean.Location = new System.Drawing.Point(93, 420);
-            this.rbClean.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rbClean.Location = new System.Drawing.Point(62, 269);
             this.rbClean.Name = "rbClean";
-            this.rbClean.Size = new System.Drawing.Size(240, 29);
+            this.rbClean.Size = new System.Drawing.Size(158, 21);
             this.rbClean.TabIndex = 4;
             this.rbClean.TabStop = true;
             this.rbClean.Text = "Clean common room";
@@ -101,10 +96,9 @@ namespace StudentHousingBV
             // 
             // btnAssign
             // 
-            this.btnAssign.Location = new System.Drawing.Point(93, 486);
-            this.btnAssign.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAssign.Location = new System.Drawing.Point(62, 311);
             this.btnAssign.Name = "btnAssign";
-            this.btnAssign.Size = new System.Drawing.Size(266, 56);
+            this.btnAssign.Size = new System.Drawing.Size(177, 36);
             this.btnAssign.TabIndex = 5;
             this.btnAssign.Text = "Assign";
             this.btnAssign.UseVisualStyleBackColor = true;
@@ -115,9 +109,10 @@ namespace StudentHousingBV
             this.lblTitle.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblTitle.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.lblTitle.Location = new System.Drawing.Point(-10, -3);
+            this.lblTitle.Location = new System.Drawing.Point(-7, -2);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(775, 94);
+            this.lblTitle.Size = new System.Drawing.Size(517, 60);
             this.lblTitle.TabIndex = 6;
             this.lblTitle.Text = "Tasks";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -125,30 +120,27 @@ namespace StudentHousingBV
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(88, 114);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(59, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 25);
+            this.label1.Size = new System.Drawing.Size(57, 17);
             this.label1.TabIndex = 7;
             this.label1.Text = "Tenant:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(390, 114);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(260, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 25);
+            this.label2.Size = new System.Drawing.Size(68, 17);
             this.label2.TabIndex = 8;
             this.label2.Text = "Deadline:";
             // 
             // textBox1
             // 
             this.textBox1.AcceptsReturn = true;
-            this.textBox1.Location = new System.Drawing.Point(395, 147);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Location = new System.Drawing.Point(263, 94);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(258, 31);
+            this.textBox1.Size = new System.Drawing.Size(173, 22);
             this.textBox1.TabIndex = 9;
             this.textBox1.Text = "DD/MM/YYYY";
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
@@ -157,18 +149,17 @@ namespace StudentHousingBV
             // 
             this.lblAssign.AutoSize = true;
             this.lblAssign.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblAssign.Location = new System.Drawing.Point(730, 352);
-            this.lblAssign.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAssign.Location = new System.Drawing.Point(487, 225);
             this.lblAssign.Name = "lblAssign";
-            this.lblAssign.Size = new System.Drawing.Size(0, 52);
+            this.lblAssign.Size = new System.Drawing.Size(0, 32);
             this.lblAssign.TabIndex = 10;
             // 
             // CompanyTasks
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(760, 631);
+            this.ClientSize = new System.Drawing.Size(507, 404);
             this.Controls.Add(this.lblAssign);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -180,7 +171,8 @@ namespace StudentHousingBV
             this.Controls.Add(this.rbDishes);
             this.Controls.Add(this.rbTrash);
             this.Controls.Add(this.comboBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "CompanyTasks";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "CompanyTasks";

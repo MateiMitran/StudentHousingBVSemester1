@@ -72,6 +72,8 @@ namespace StudentHousingBV
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.tbAdd);
             this.Controls.Add(this.lblTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "CompanyAddRule";
             this.Text = "CompanyAddRule";
             this.ResumeLayout(false);

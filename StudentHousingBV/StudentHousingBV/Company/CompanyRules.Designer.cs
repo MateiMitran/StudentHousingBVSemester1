@@ -106,7 +106,9 @@ namespace StudentHousingBV
             this.Controls.Add(this.btnRemoveRule);
             this.Controls.Add(this.lbRules);
             this.Controls.Add(this.lblTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "CompanyRules";
             this.Text = "CompanyRules";
             this.Load += new System.EventHandler(this.CompanyRules_Load);

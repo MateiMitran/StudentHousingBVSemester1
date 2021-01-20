@@ -283,5 +283,10 @@ namespace StudentHousingBV
         {
             this.btnLogIn.ForeColor = Color.Black;
         }
+
+        private void LogInScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -51,7 +51,7 @@ namespace StudentHousingBV
                 {
                     if (newTenantPassword != "")
                     {
-                        if (newTenantRole == "tenant" || newTenantRole == "admin")
+                        if (newTenantRole == "user" || newTenantRole == "admin")
                         {
                             TenantClass newTenant = new TenantClass(newTenantName, newTenantPassword);
                             login.addTenant(newTenant);
@@ -133,6 +133,11 @@ namespace StudentHousingBV
             }
 
             return res.ToString();
+        }
+
+        private void cbNewUserRole_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

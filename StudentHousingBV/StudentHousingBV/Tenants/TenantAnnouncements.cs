@@ -36,25 +36,16 @@ namespace StudentHousingBV
 
             allTenants = login.getTenants();
             this.lblNrOfTenants.Text = Convert.ToString(allTenants.Count);
-
-            String currentTenantName = login.getTenantName();
+            TenantHome home = (TenantHome)Application.OpenForms["TenantHome"];
+            currentTenant = home.getTenant();
             this.voteslbl.Text = Convert.ToString(v);
-
-            for (int i = 0; i < allTenants.Count; i++)
+            if (currentTenant.choose == true)
             {
-                if (allTenants[i].getName() == currentTenantName)
-                {
-                    currentTenant = allTenants[i];
-
-                    if (currentTenant.choose == true)
-                    {
-                        this.voteslbl.Text = Convert.ToString(v);
-                        this.votebtn.Enabled = false;
-                        this.votebtn.BackColor = Color.Gray;
-                        this.votebtn.ForeColor = Color.DimGray;
-                        this.opinionlbl.Text = "You presented your view on the matter!";
-                    }
-                }
+               this.voteslbl.Text = Convert.ToString(v);
+               this.votebtn.Enabled = false;
+               this.votebtn.BackColor = Color.Gray;
+               this.votebtn.ForeColor = Color.DimGray;
+               this.opinionlbl.Text = "You presented your view on the matter!";
             }
         }
 

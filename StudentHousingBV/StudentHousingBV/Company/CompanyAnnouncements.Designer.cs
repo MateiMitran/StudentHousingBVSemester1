@@ -106,7 +106,9 @@ namespace StudentHousingBV
             this.Controls.Add(this.btnRemoveAnnouncement);
             this.Controls.Add(this.lbAnnouncements);
             this.Controls.Add(this.lblTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "CompanyAnnouncements";
             this.Text = "CompanyAnnouncements";
             this.Load += new System.EventHandler(this.CompanyAnnouncements_Load);

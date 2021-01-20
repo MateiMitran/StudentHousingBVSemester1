@@ -64,7 +64,7 @@ namespace StudentHousingBV
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // CompanyAddAnnouncementsOrRules
+            // CompanyAddAnnouncements
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -72,7 +72,9 @@ namespace StudentHousingBV
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.tbAdd);
             this.Controls.Add(this.lblTitle);
-            this.Name = "CompanyAddAnnouncementsOrRules";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "CompanyAddAnnouncements";
             this.Text = "CompanyAddAnnouncements";
             this.ResumeLayout(false);
             this.PerformLayout();
