@@ -28,7 +28,7 @@
       <Entity type="Class">
         <Name>TenantClass</Name>
         <Access>Public</Access>
-        <Location left="2527" top="302" />
+        <Location left="2580" top="279" />
         <Size width="373" height="570" />
         <Collapsed>False</Collapsed>
         <Member type="Field">public int balance</Member>
@@ -90,7 +90,7 @@
       <Entity type="Class">
         <Name>Rule</Name>
         <Access>Public</Access>
-        <Location left="1711" top="588" />
+        <Location left="1711" top="715" />
         <Size width="162" height="140" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private String rule</Member>
@@ -101,43 +101,56 @@
       <Entity type="Class">
         <Name>Task</Name>
         <Access>Public</Access>
-        <Location left="1711" top="334" />
-        <Size width="162" height="140" />
+        <Location left="1711" top="276" />
+        <Size width="162" height="349" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">private String task</Member>
-        <Member type="Constructor">public Task(String Task)</Member>
-        <Member type="Method">public String getTask()</Member>
+        <Member type="Field">private TaskTypeEnum taskType</Member>
+        <Member type="Field">private DateTime dueDate</Member>
+        <Member type="Field">private bool finishedStatus</Member>
+        <Member type="Field">private int id</Member>
+        <Member type="Field">public static int nextId = 0</Member>
+        <Member type="Constructor">public Task(DateTime dueDate)</Member>
+        <Member type="Constructor">public Task(TaskTypeEnum task, DateTime dueDate)</Member>
+        <Member type="Constructor">public Task(TaskTypeEnum task, DateTime dueDate, bool finishedStatus)</Member>
+        <Member type="Constructor">public Task(TaskTypeEnum task, DateTime dueDate, bool finishedStatus, int id)</Member>
+        <Member type="Method">public void setTaskType(TaskTypeEnum type)</Member>
+        <Member type="Method">public TaskTypeEnum getTaskType()</Member>
+        <Member type="Method">public DateTime getDueDate()</Member>
+        <Member type="Method">public void setStatus(bool status)</Member>
+        <Member type="Method">public bool getStatus()</Member>
+        <Member type="Method">public String getStatusWords()</Member>
+        <Member type="Method">public int getId()</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
         <Name>LogInScreen</Name>
         <Access>Public</Access>
-        <Location left="1331" top="368" />
+        <Location left="1295" top="205" />
         <Size width="334" height="485" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">private List&lt;TenantClass&gt; tenants</Member>
+        <Member type="Field">public static Admin currentAdmin</Member>
+        <Member type="Field">public static TenantClass currentTenant</Member>
+        <Member type="Field">private String adminName</Member>
         <Member type="Field">private List&lt;Admin&gt; admins</Member>
         <Member type="Field">private List&lt;String&gt; announcements</Member>
         <Member type="Field">private List&lt;String&gt; rules</Member>
         <Member type="Field">private String tenantName</Member>
-        <Member type="Field">private String adminName</Member>
-        <Member type="Field">public static TenantClass currentTenant</Member>
-        <Member type="Field">public static Admin currentAdmin</Member>
+        <Member type="Field">private List&lt;TenantClass&gt; tenants</Member>
         <Member type="Constructor">public LogInScreen()</Member>
-        <Member type="Method">public void initializeTenants()</Member>
-        <Member type="Method">private void initializeAnnouncements()</Member>
-        <Member type="Method">private void initializeRules()</Member>
-        <Member type="Method">private void btnLogIn_Click(object sender, EventArgs e)</Member>
-        <Member type="Method">public void updateRules(String rule)</Member>
-        <Member type="Method">public void removeRule(String rule)</Member>
-        <Member type="Method">public List&lt;String&gt; getRules()</Member>
-        <Member type="Method">public void updateAnnouncements(String announcement)</Member>
-        <Member type="Method">public void removeAnnouncement(String announcement)</Member>
-        <Member type="Method">public List&lt;String&gt; getAnnouncements()</Member>
         <Member type="Method">public void addTenant(TenantClass x)</Member>
+        <Member type="Method">public List&lt;String&gt; getAnnouncements()</Member>
+        <Member type="Method">public List&lt;String&gt; getRules()</Member>
         <Member type="Method">public String getTenantName()</Member>
+        <Member type="Method">public void initializeTenants()</Member>
+        <Member type="Method">public void removeAnnouncement(String announcement)</Member>
+        <Member type="Method">public void removeRule(String rule)</Member>
+        <Member type="Method">public void updateAnnouncements(String announcement)</Member>
+        <Member type="Method">public void updateRules(String rule)</Member>
+        <Member type="Method">private void btnLogIn_Click(object sender, EventArgs e)</Member>
         <Member type="Method">private void btnLogIn_MouseHover(object sender, EventArgs e)</Member>
         <Member type="Method">private void btnLogIn_MouseLeave(object sender, EventArgs e)</Member>
+        <Member type="Method">private void initializeAnnouncements()</Member>
+        <Member type="Method">private void initializeRules()</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -207,7 +220,7 @@
       <Entity type="Class">
         <Name>TenantTasks</Name>
         <Access>Public</Access>
-        <Location left="2003" top="267" />
+        <Location left="1970" top="261" />
         <Size width="334" height="189" />
         <Collapsed>False</Collapsed>
         <Member type="Field">TenantClass currentTenant</Member>
@@ -236,7 +249,7 @@
       <Entity type="Class">
         <Name>CompanyAccount</Name>
         <Access>Public</Access>
-        <Location left="491" top="345" />
+        <Location left="491" top="367" />
         <Size width="342" height="134" />
         <Collapsed>False</Collapsed>
         <Member type="Constructor">public CompanyAccount()</Member>
@@ -284,13 +297,13 @@
         <Size width="314" height="216" />
         <Collapsed>False</Collapsed>
         <Member type="Field">List&lt;TenantClass&gt; allTenants</Member>
-        <Member type="Field">TenantClass currentTenant</Member>
         <Member type="Field">List&lt;String&gt; complaints</Member>
+        <Member type="Field">TenantClass currentTenant</Member>
         <Member type="Constructor">public CompanyComplaints()</Member>
-        <Member type="Method">private void CompanyComplaints_Load(object sender, EventArgs e)</Member>
-        <Member type="Method">private void btnShowComplaints_Click(object sender, EventArgs e)</Member>
         <Member type="Method">public void UpdateListBox()</Member>
-        <Member type="Method">private void btnRemoveComplaint_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void btnShowComplaints_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void CompanyComplaints_Load(object sender, EventArgs e)</Member>
+        <Member type="Method">private void lbComplaints_SelectedIndexChanged(object sender, EventArgs e)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -312,7 +325,7 @@
       <Entity type="Class">
         <Name>CompanyRules</Name>
         <Access>Public</Access>
-        <Location left="48" top="806" />
+        <Location left="67" top="817" />
         <Size width="314" height="230" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private List&lt;String&gt; rules</Member>
@@ -329,13 +342,14 @@
         <Name>CompanyTasks</Name>
         <Access>Public</Access>
         <Location left="67" top="594" />
-        <Size width="314" height="174" />
+        <Size width="314" height="179" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private List&lt;TenantClass&gt; allTenants</Member>
         <Member type="Field">private TenantClass currentTenant</Member>
         <Member type="Constructor">public CompanyTasks()</Member>
         <Member type="Method">private void CompanyTasks_Load(object sender, EventArgs e)</Member>
         <Member type="Method">private void btnAssign_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void textBox1_Enter(object sender, EventArgs e)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -367,7 +381,7 @@
       <Entity type="Class">
         <Name>CompanyUpdateRule</Name>
         <Access>Public</Access>
-        <Location left="491" top="115" />
+        <Location left="491" top="175" />
         <Size width="342" height="155" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private List&lt;String&gt; rules</Member>
@@ -375,6 +389,47 @@
         <Member type="Constructor">public CompanyUpdateRule(String rule, int index)</Member>
         <Member type="Method">private void btnUpdate_Click(object sender, EventArgs e)</Member>
         <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Complaint</Name>
+        <Access>Public</Access>
+        <Location left="1295" top="767" />
+        <Size width="278" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ComplaintTypeEnum type</Member>
+        <Member type="Field">private String message</Member>
+        <Member type="Field">private DateTime dateCreate</Member>
+        <Member type="Constructor">public Complaint(ComplaintTypeEnum type, String message)</Member>
+        <Member type="Constructor">public Complaint()</Member>
+        <Member type="Method">public void addType(ComplaintTypeEnum type)</Member>
+        <Member type="Method">public void addMessage(String message)</Member>
+        <Member type="Method">public ComplaintTypeEnum getType()</Member>
+        <Member type="Method">public String getMessage()</Member>
+        <Member type="Method">public DateTime getDateCreated()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Enum">
+        <Name>ComplaintTypeEnum</Name>
+        <Access>Public</Access>
+        <Location left="1505" top="980" />
+        <Size width="162" height="156" />
+        <Collapsed>False</Collapsed>
+        <Value>NOISE</Value>
+        <Value>DIRTY</Value>
+        <Value>TRASH</Value>
+        <Value>UNLOCKED</Value>
+        <Value>OTHER</Value>
+      </Entity>
+      <Entity type="Enum">
+        <Name>TaskTypeEnum</Name>
+        <Access>Public</Access>
+        <Location left="1126" top="934" />
+        <Size width="162" height="156" />
+        <Collapsed>False</Collapsed>
+        <Value>TRASH</Value>
+        <Value>DISHES</Value>
+        <Value>GROCERIES</Value>
+        <Value>CLEAN</Value>
       </Entity>
     </Entities>
     <Relationships>
@@ -387,6 +442,8 @@
         <EndMultiplicity>0..*</EndMultiplicity>
       </Relationship>
       <Relationship type="Association" first="1" second="9">
+        <Label>
+        </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
@@ -395,6 +452,8 @@
         <EndMultiplicity>1..*</EndMultiplicity>
       </Relationship>
       <Relationship type="Association" first="1" second="10">
+        <Label>
+        </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
@@ -403,6 +462,8 @@
         <EndMultiplicity>1..*</EndMultiplicity>
       </Relationship>
       <Relationship type="Association" first="1" second="12">
+        <Label>
+        </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
@@ -411,6 +472,8 @@
         <EndMultiplicity>1</EndMultiplicity>
       </Relationship>
       <Relationship type="Association" first="1" second="11">
+        <Label>
+        </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
@@ -419,14 +482,14 @@
         <EndMultiplicity>1</EndMultiplicity>
       </Relationship>
       <Relationship type="Association" first="1" second="7">
-        <Label>
-        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
         <Direction>Unidirectional</Direction>
         <AssociationType>Association</AssociationType>
       </Relationship>
       <Relationship type="Association" first="1" second="8">
+        <Label>
+        </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
@@ -435,6 +498,8 @@
         <EndMultiplicity>1</EndMultiplicity>
       </Relationship>
       <Relationship type="Association" first="1" second="13">
+        <Label>
+        </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
@@ -443,40 +508,30 @@
         <EndMultiplicity>0..*</EndMultiplicity>
       </Relationship>
       <Relationship type="Association" first="13" second="3">
-        <Label>
-        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
         <Direction>Unidirectional</Direction>
         <AssociationType>Association</AssociationType>
       </Relationship>
       <Relationship type="Association" first="11" second="4">
-        <Label>
-        </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
         <AssociationType>Association</AssociationType>
       </Relationship>
       <Relationship type="Association" first="12" second="5">
-        <Label>
-        </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
         <AssociationType>Association</AssociationType>
       </Relationship>
       <Relationship type="Association" first="6" second="1">
-        <Label>
-        </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
         <AssociationType>Association</AssociationType>
       </Relationship>
       <Relationship type="Association" first="6" second="2">
-        <Label>
-        </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
@@ -492,6 +547,8 @@
         <EndMultiplicity>1</EndMultiplicity>
       </Relationship>
       <Relationship type="Association" first="2" second="16">
+        <Label>
+        </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
@@ -500,6 +557,8 @@
         <EndMultiplicity>1</EndMultiplicity>
       </Relationship>
       <Relationship type="Association" first="2" second="15">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
         <Direction>Unidirectional</Direction>
@@ -508,14 +567,14 @@
         <EndMultiplicity>1</EndMultiplicity>
       </Relationship>
       <Relationship type="Association" first="2" second="14">
-        <Label>
-        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
         <Direction>Unidirectional</Direction>
         <AssociationType>Association</AssociationType>
       </Relationship>
       <Relationship type="Association" first="2" second="18">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
         <Direction>Unidirectional</Direction>
@@ -524,6 +583,8 @@
         <EndMultiplicity>0..1</EndMultiplicity>
       </Relationship>
       <Relationship type="Association" first="2" second="20">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
         <Direction>Unidirectional</Direction>
@@ -532,6 +593,8 @@
         <EndMultiplicity>0..*</EndMultiplicity>
       </Relationship>
       <Relationship type="Association" first="2" second="21">
+        <Label>
+        </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
@@ -540,6 +603,8 @@
         <EndMultiplicity>0..*</EndMultiplicity>
       </Relationship>
       <Relationship type="Association" first="2" second="22">
+        <Label>
+        </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
@@ -548,6 +613,8 @@
         <EndMultiplicity>0..*</EndMultiplicity>
       </Relationship>
       <Relationship type="Association" first="2" second="23">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
         <Direction>Unidirectional</Direction>
@@ -556,12 +623,44 @@
         <EndMultiplicity>1</EndMultiplicity>
       </Relationship>
       <Relationship type="Association" first="2" second="24">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
         <Direction>Unidirectional</Direction>
         <AssociationType>Association</AssociationType>
         <EndRole>-rule</EndRole>
         <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="26">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="18" second="26">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="5" second="27">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="21" second="27">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
       </Relationship>
     </Relationships>
   </ProjectItem>
