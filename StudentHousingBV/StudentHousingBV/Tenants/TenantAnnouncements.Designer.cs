@@ -50,18 +50,20 @@ namespace StudentHousingBV
             this.pnlTitle.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.pnlTitle.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlTitle.Controls.Add(this.lblTitle);
-            this.pnlTitle.Location = new System.Drawing.Point(12, 12);
+            this.pnlTitle.Location = new System.Drawing.Point(18, 19);
+            this.pnlTitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(474, 74);
+            this.pnlTitle.Size = new System.Drawing.Size(709, 113);
             this.pnlTitle.TabIndex = 1;
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(3, 0);
+            this.lblTitle.Location = new System.Drawing.Point(4, 0);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(446, 32);
+            this.lblTitle.Size = new System.Drawing.Size(667, 52);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Announcements and Proposals:";
             // 
@@ -69,9 +71,10 @@ namespace StudentHousingBV
             // 
             this.lblNotice.AutoSize = true;
             this.lblNotice.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotice.Location = new System.Drawing.Point(9, 424);
+            this.lblNotice.Location = new System.Drawing.Point(14, 662);
+            this.lblNotice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNotice.Name = "lblNotice";
-            this.lblNotice.Size = new System.Drawing.Size(623, 17);
+            this.lblNotice.Size = new System.Drawing.Size(903, 25);
             this.lblNotice.TabIndex = 2;
             this.lblNotice.Text = "\"Student Housing BV\" will update this tab every time an important event is schedu" +
     "led";
@@ -82,19 +85,21 @@ namespace StudentHousingBV
             this.lbAnnouncements.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbAnnouncements.ForeColor = System.Drawing.Color.Maroon;
             this.lbAnnouncements.FormattingEnabled = true;
-            this.lbAnnouncements.ItemHeight = 25;
-            this.lbAnnouncements.Location = new System.Drawing.Point(12, 126);
+            this.lbAnnouncements.ItemHeight = 37;
+            this.lbAnnouncements.Location = new System.Drawing.Point(18, 197);
+            this.lbAnnouncements.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lbAnnouncements.Name = "lbAnnouncements";
-            this.lbAnnouncements.Size = new System.Drawing.Size(422, 204);
+            this.lbAnnouncements.Size = new System.Drawing.Size(631, 300);
             this.lbAnnouncements.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 106);
+            this.label1.Location = new System.Drawing.Point(30, 166);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 17);
+            this.label1.Size = new System.Drawing.Size(178, 25);
             this.label1.TabIndex = 9;
             this.label1.Text = "announcements";
             // 
@@ -102,9 +107,10 @@ namespace StudentHousingBV
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(553, 106);
+            this.label2.Location = new System.Drawing.Point(830, 166);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 17);
+            this.label2.Size = new System.Drawing.Size(115, 25);
             this.label2.TabIndex = 10;
             this.label2.Text = "proposals";
             // 
@@ -112,18 +118,20 @@ namespace StudentHousingBV
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(479, 138);
+            this.label3.Location = new System.Drawing.Point(718, 216);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(433, 40);
+            this.label3.Size = new System.Drawing.Size(695, 64);
             this.label3.TabIndex = 11;
             this.label3.Text = "*We want to have a pizza party at 20:00 on Friday,\r\neverybody is invited to join!" +
     "\r\n";
             // 
             // votebtn
             // 
-            this.votebtn.Location = new System.Drawing.Point(582, 198);
+            this.votebtn.Location = new System.Drawing.Point(873, 309);
+            this.votebtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.votebtn.Name = "votebtn";
-            this.votebtn.Size = new System.Drawing.Size(121, 51);
+            this.votebtn.Size = new System.Drawing.Size(182, 80);
             this.votebtn.TabIndex = 12;
             this.votebtn.Text = "I\'m in!";
             this.votebtn.UseVisualStyleBackColor = true;
@@ -133,9 +141,10 @@ namespace StudentHousingBV
             // 
             this.voteslbl.AutoSize = true;
             this.voteslbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.voteslbl.Location = new System.Drawing.Point(718, 212);
+            this.voteslbl.Location = new System.Drawing.Point(1077, 331);
+            this.voteslbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.voteslbl.Name = "voteslbl";
-            this.voteslbl.Size = new System.Drawing.Size(18, 20);
+            this.voteslbl.Size = new System.Drawing.Size(31, 32);
             this.voteslbl.TabIndex = 13;
             this.voteslbl.Text = "0";
             // 
@@ -143,9 +152,10 @@ namespace StudentHousingBV
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(733, 212);
+            this.label5.Location = new System.Drawing.Point(1100, 331);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(14, 20);
+            this.label5.Size = new System.Drawing.Size(23, 32);
             this.label5.TabIndex = 14;
             this.label5.Text = "/";
             // 
@@ -153,34 +163,37 @@ namespace StudentHousingBV
             // 
             this.lblNrOfTenants.AutoSize = true;
             this.lblNrOfTenants.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNrOfTenants.Location = new System.Drawing.Point(742, 212);
+            this.lblNrOfTenants.Location = new System.Drawing.Point(1113, 331);
+            this.lblNrOfTenants.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNrOfTenants.Name = "lblNrOfTenants";
-            this.lblNrOfTenants.Size = new System.Drawing.Size(18, 20);
+            this.lblNrOfTenants.Size = new System.Drawing.Size(31, 32);
             this.lblNrOfTenants.TabIndex = 15;
             this.lblNrOfTenants.Text = "0";
             // 
             // opinionlbl
             // 
             this.opinionlbl.AutoSize = true;
-            this.opinionlbl.Location = new System.Drawing.Point(480, 313);
+            this.opinionlbl.Location = new System.Drawing.Point(720, 489);
+            this.opinionlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.opinionlbl.Name = "opinionlbl";
-            this.opinionlbl.Size = new System.Drawing.Size(0, 17);
+            this.opinionlbl.Size = new System.Drawing.Size(0, 25);
             this.opinionlbl.TabIndex = 16;
             // 
             // eventTakesPlacelbl
             // 
             this.eventTakesPlacelbl.AutoSize = true;
-            this.eventTakesPlacelbl.Location = new System.Drawing.Point(565, 51);
+            this.eventTakesPlacelbl.Location = new System.Drawing.Point(848, 80);
+            this.eventTakesPlacelbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.eventTakesPlacelbl.Name = "eventTakesPlacelbl";
-            this.eventTakesPlacelbl.Size = new System.Drawing.Size(0, 17);
+            this.eventTakesPlacelbl.Size = new System.Drawing.Size(0, 25);
             this.eventTakesPlacelbl.TabIndex = 17;
             // 
             // TenantAnnouncements
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(935, 485);
+            this.ClientSize = new System.Drawing.Size(1506, 758);
             this.Controls.Add(this.eventTakesPlacelbl);
             this.Controls.Add(this.opinionlbl);
             this.Controls.Add(this.lblNrOfTenants);
@@ -194,6 +207,7 @@ namespace StudentHousingBV
             this.Controls.Add(this.lblNotice);
             this.Controls.Add(this.pnlTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TenantAnnouncements";

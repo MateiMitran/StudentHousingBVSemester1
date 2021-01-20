@@ -84,7 +84,7 @@ namespace StudentHousingBV
             this.panel1.Location = new System.Drawing.Point(-2, -5);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1814, 122);
+            this.panel1.Size = new System.Drawing.Size(1786, 122);
             this.panel1.TabIndex = 7;
             // 
             // lblTasks
@@ -93,7 +93,7 @@ namespace StudentHousingBV
             this.lblTasks.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTasks.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblTasks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.lblTasks.Location = new System.Drawing.Point(1620, 47);
+            this.lblTasks.Location = new System.Drawing.Point(1625, 47);
             this.lblTasks.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTasks.Name = "lblTasks";
             this.lblTasks.Size = new System.Drawing.Size(108, 32);
@@ -236,7 +236,7 @@ namespace StudentHousingBV
             this.lblAccount.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.lblAccount.Location = new System.Drawing.Point(1611, 890);
+            this.lblAccount.Location = new System.Drawing.Point(1569, 890);
             this.lblAccount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAccount.Name = "lblAccount";
             this.lblAccount.Size = new System.Drawing.Size(184, 37);
@@ -248,7 +248,7 @@ namespace StudentHousingBV
             // 
             this.pbAccountSettings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbAccountSettings.Image = ((System.Drawing.Image)(resources.GetObject("pbAccountSettings.Image")));
-            this.pbAccountSettings.Location = new System.Drawing.Point(1566, 891);
+            this.pbAccountSettings.Location = new System.Drawing.Point(1524, 891);
             this.pbAccountSettings.Name = "pbAccountSettings";
             this.pbAccountSettings.Size = new System.Drawing.Size(38, 38);
             this.pbAccountSettings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -274,9 +274,9 @@ namespace StudentHousingBV
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(577, 185);
             this.label1.TabIndex = 0;
-            this.label1.Text = "You are logged is an admin of\r\nStudentHousingBV. You can view\r\ncomplaints, update" +
-    " the announcements\r\nand rules, add and remove tenants and\r\nassign tasks to our t" +
-    "enants! \r\n";
+            this.label1.Text = "You are logged in as an admin of\r\nStudentHousingBV. You can view\r\ncomplaints, upd" +
+    "ate the announcements\r\nand rules, add and remove tenants and\r\nassign tasks to ou" +
+    "r tenants! \r\n";
             // 
             // lblInfo
             // 
@@ -302,8 +302,9 @@ namespace StudentHousingBV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(1809, 970);
+            this.ClientSize = new System.Drawing.Size(1781, 970);
             this.Controls.Add(this.pbImage);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.pnlInfo);
